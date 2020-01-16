@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Wall_Arch_Corner_Inner.obj-d6d38296c9db01a21f754019b6d81a9a.mesh"
+
+[deps]
+
+files=[ "res://.import/Wall_Arch_Corner_Inner.obj-d6d38296c9db01a21f754019b6d81a9a.mesh" ]
+
+source_file="res://TempleAssets/Walls/Wall_Arch_Corner_Inner.obj"
+dest_files=[ "res://.import/Wall_Arch_Corner_Inner.obj-d6d38296c9db01a21f754019b6d81a9a.mesh", "res://.import/Wall_Arch_Corner_Inner.obj-d6d38296c9db01a21f754019b6d81a9a.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

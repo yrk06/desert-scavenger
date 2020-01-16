@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Wall_Ruined_Half_1.obj-9c5dd91383929caca8ea65cbed853179.mesh"
+
+[deps]
+
+files=[ "res://.import/Wall_Ruined_Half_1.obj-9c5dd91383929caca8ea65cbed853179.mesh" ]
+
+source_file="res://TempleAssets/Walls/Wall_Ruined_Half_1.obj"
+dest_files=[ "res://.import/Wall_Ruined_Half_1.obj-9c5dd91383929caca8ea65cbed853179.mesh", "res://.import/Wall_Ruined_Half_1.obj-9c5dd91383929caca8ea65cbed853179.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

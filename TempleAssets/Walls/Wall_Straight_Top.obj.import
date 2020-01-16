@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Wall_Straight_Top.obj-ae490b4420e2fbce4c7f619f5ca24e0e.mesh"
+
+[deps]
+
+files=[ "res://.import/Wall_Straight_Top.obj-ae490b4420e2fbce4c7f619f5ca24e0e.mesh" ]
+
+source_file="res://TempleAssets/Walls/Wall_Straight_Top.obj"
+dest_files=[ "res://.import/Wall_Straight_Top.obj-ae490b4420e2fbce4c7f619f5ca24e0e.mesh", "res://.import/Wall_Straight_Top.obj-ae490b4420e2fbce4c7f619f5ca24e0e.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

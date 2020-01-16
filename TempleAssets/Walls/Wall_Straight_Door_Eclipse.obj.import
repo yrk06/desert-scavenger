@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Wall_Straight_Door_Eclipse.obj-6800ce6cd0c213b03faaaaa6144c2d69.mesh"
+
+[deps]
+
+files=[ "res://.import/Wall_Straight_Door_Eclipse.obj-6800ce6cd0c213b03faaaaa6144c2d69.mesh" ]
+
+source_file="res://TempleAssets/Walls/Wall_Straight_Door_Eclipse.obj"
+dest_files=[ "res://.import/Wall_Straight_Door_Eclipse.obj-6800ce6cd0c213b03faaaaa6144c2d69.mesh", "res://.import/Wall_Straight_Door_Eclipse.obj-6800ce6cd0c213b03faaaaa6144c2d69.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

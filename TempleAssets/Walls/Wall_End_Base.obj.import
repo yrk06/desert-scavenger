@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Wall_End_Base.obj-92ddadedf6ed42293ac553b3f2d6e23d.mesh"
+
+[deps]
+
+files=[ "res://.import/Wall_End_Base.obj-92ddadedf6ed42293ac553b3f2d6e23d.mesh" ]
+
+source_file="res://TempleAssets/Walls/Wall_End_Base.obj"
+dest_files=[ "res://.import/Wall_End_Base.obj-92ddadedf6ed42293ac553b3f2d6e23d.mesh", "res://.import/Wall_End_Base.obj-92ddadedf6ed42293ac553b3f2d6e23d.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true
