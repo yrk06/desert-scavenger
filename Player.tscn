@@ -8,6 +8,7 @@ height = 0.9
 
 [node name="KinematicBody" type="KinematicBody"]
 script = ExtResource( 1 )
+CROUCH_HALF_HEIGHT = 0.9
 
 [node name="Body" type="CollisionShape" parent="."]
 transform = Transform( 1, 0, 0, 0, 1.19249e-008, 1, 0, -1, 1.19249e-008, 0, 0, 0 )
@@ -21,7 +22,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0 )
 [node name="Label" type="Label" parent="RotationHelper/Camera"]
 margin_right = 16.0
 margin_bottom = 31.0
-text = "X
+text = "O
 "
 
 [node name="Action" type="RayCast" parent="RotationHelper"]

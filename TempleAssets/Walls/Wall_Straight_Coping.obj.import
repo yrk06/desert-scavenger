@@ -14,5 +14,5 @@ dest_files=[ "res://.import/Wall_Straight_Coping.obj-181aadcc9ae9e8498ad2d542e50
 [params]
 
 generate_tangents=true
-scale_mesh=Vector3( 1, 1, 1 )
+scale_mesh=Vector3( 2, 2, 2 )
 optimize_mesh=true

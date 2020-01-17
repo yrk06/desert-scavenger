@@ -14,5 +14,5 @@ dest_files=[ "res://.import/Wall_Straight_Door.obj-f4eab891919841d84a00fe9cdca3e
 [params]
 
 generate_tangents=true
-scale_mesh=Vector3( 1, 1, 1 )
+scale_mesh=Vector3( 2, 2, 2 )
 optimize_mesh=true

@@ -14,5 +14,5 @@ dest_files=[ "res://.import/Wall_Straight_Door_Large_Pocket.obj-8c47e5d03d26fe7d
 [params]
 
 generate_tangents=true
-scale_mesh=Vector3( 1, 1, 1 )
+scale_mesh=Vector3( 2, 2, 2 )
 optimize_mesh=true

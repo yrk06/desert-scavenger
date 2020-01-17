@@ -14,5 +14,5 @@ dest_files=[ "res://.import/Wall_Straight_Windows_Tall.obj-ea7354133c1403d0f1f7a
 [params]
 
 generate_tangents=true
-scale_mesh=Vector3( 1, 1, 1 )
+scale_mesh=Vector3( 2, 2, 2 )
 optimize_mesh=true

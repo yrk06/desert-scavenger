@@ -14,5 +14,5 @@ dest_files=[ "res://.import/Wall_Arch_Straight.obj-ab43fdf6424c358ba67602ab09221
 [params]
 
 generate_tangents=true
-scale_mesh=Vector3( 1, 1, 1 )
+scale_mesh=Vector3( 2, 2, 2 )
 optimize_mesh=true

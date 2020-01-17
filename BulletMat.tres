@@ -1,0 +1,47 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=2]
+
+[sub_resource type="Shader" id=1]
+code = "shader_type spatial;
+
+varying vec3 v_pos;
+
+
+float get_deform(vec3 pos, float time){
+	float y = 0.06* sin(((pos.x * pos.z)+time)*5.0);
+	y += 0.03* sin(((pos.x * pos.y)+time)*3.0);
+	y += 0.04* sin(((pos.x * pos.z)-time)*7.0);
+	y += 0.05* sin(((pos.x * pos.y)-time)*2.0);
+	return y;
+	
+	}
+float distanceFromCenter(vec3 Pos){ 
+	float f = sqrt(pow(Pos.x,2.0)+pow(Pos.y,2.0));
+	return sqrt(pow(f,2.0) + pow(Pos.z,2.0));
+
+
+}
+
+void vertex(){
+	VERTEX.y += get_deform(VERTEX, TIME);
+	
+	
+	v_pos = VERTEX;
+	}
+
+void fragment(){
+	if (distanceFromCenter(v_pos) >= 1.01){
+		ALBEDO = vec3(1.0,0.1,0.1);
+		EMISSION = vec3(1.0,0.1,0.1)*2.0;
+		
+		
+	} else {
+		ALBEDO = vec3(0.7,0.3,0.1);
+		EMISSION = vec3(1.0,0.1,0.1)*0.5;
+		}
+	
+	
+	}
+"
+
+[resource]
+shader = SubResource( 1 )

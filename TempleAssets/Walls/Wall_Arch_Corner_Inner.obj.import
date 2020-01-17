@@ -14,5 +14,5 @@ dest_files=[ "res://.import/Wall_Arch_Corner_Inner.obj-d6d38296c9db01a21f754019b
 [params]
 
 generate_tangents=true
-scale_mesh=Vector3( 1, 1, 1 )
+scale_mesh=Vector3( 2, 2, 2 )
 optimize_mesh=true

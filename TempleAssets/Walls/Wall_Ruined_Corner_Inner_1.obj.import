@@ -14,5 +14,5 @@ dest_files=[ "res://.import/Wall_Ruined_Corner_Inner_1.obj-2175a28c14358d6276123
 [params]
 
 generate_tangents=true
-scale_mesh=Vector3( 1, 1, 1 )
+scale_mesh=Vector3( 2, 2, 2 )
 optimize_mesh=true

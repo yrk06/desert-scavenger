@@ -14,5 +14,5 @@ dest_files=[ "res://.import/Wall_Straight_Doorway_Large_Extension.obj-989967e942
 [params]
 
 generate_tangents=true
-scale_mesh=Vector3( 1, 1, 1 )
+scale_mesh=Vector3( 2, 2, 2 )
 optimize_mesh=true
