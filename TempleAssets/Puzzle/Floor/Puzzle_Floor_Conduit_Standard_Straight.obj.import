@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Puzzle_Floor_Conduit_Standard_Straight.obj-1a677a851f33cb3f7286dc9fcd8b4f52.mesh"
+
+[deps]
+
+files=[ "res://.import/Puzzle_Floor_Conduit_Standard_Straight.obj-1a677a851f33cb3f7286dc9fcd8b4f52.mesh" ]
+
+source_file="res://TempleAssets/Puzzle/Floor/Puzzle_Floor_Conduit_Standard_Straight.obj"
+dest_files=[ "res://.import/Puzzle_Floor_Conduit_Standard_Straight.obj-1a677a851f33cb3f7286dc9fcd8b4f52.mesh", "res://.import/Puzzle_Floor_Conduit_Standard_Straight.obj-1a677a851f33cb3f7286dc9fcd8b4f52.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

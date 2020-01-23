@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Floor_Curved_Small_Outer.obj-d770f13cce58c7dd36e7722086d4c7b4.mesh"
+
+[deps]
+
+files=[ "res://.import/Floor_Curved_Small_Outer.obj-d770f13cce58c7dd36e7722086d4c7b4.mesh" ]
+
+source_file="res://TempleAssets/Floor/Floor_Curved_Small_Outer.obj"
+dest_files=[ "res://.import/Floor_Curved_Small_Outer.obj-d770f13cce58c7dd36e7722086d4c7b4.mesh", "res://.import/Floor_Curved_Small_Outer.obj-d770f13cce58c7dd36e7722086d4c7b4.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

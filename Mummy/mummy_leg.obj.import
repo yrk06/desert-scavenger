@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/mummy_leg.obj-04774ce359d8db25509df61c37b26bb4.mesh"
+
+[deps]
+
+files=[ "res://.import/mummy_leg.obj-04774ce359d8db25509df61c37b26bb4.mesh" ]
+
+source_file="res://Mummy/mummy_leg.obj"
+dest_files=[ "res://.import/mummy_leg.obj-04774ce359d8db25509df61c37b26bb4.mesh", "res://.import/mummy_leg.obj-04774ce359d8db25509df61c37b26bb4.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

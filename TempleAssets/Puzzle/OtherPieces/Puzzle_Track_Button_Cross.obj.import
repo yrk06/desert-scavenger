@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Puzzle_Track_Button_Cross.obj-fdf4615b06ae4b59c3d5d1fc76b2670a.mesh"
+
+[deps]
+
+files=[ "res://.import/Puzzle_Track_Button_Cross.obj-fdf4615b06ae4b59c3d5d1fc76b2670a.mesh" ]
+
+source_file="res://TempleAssets/Puzzle/OtherPieces/Puzzle_Track_Button_Cross.obj"
+dest_files=[ "res://.import/Puzzle_Track_Button_Cross.obj-fdf4615b06ae4b59c3d5d1fc76b2670a.mesh", "res://.import/Puzzle_Track_Button_Cross.obj-fdf4615b06ae4b59c3d5d1fc76b2670a.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

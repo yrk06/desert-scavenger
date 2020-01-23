@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Puzzle_Floor_Conduit_Rotating_Platform_TJoint.obj-d0760857323d76da399b47f3af5e6904.mesh"
+
+[deps]
+
+files=[ "res://.import/Puzzle_Floor_Conduit_Rotating_Platform_TJoint.obj-d0760857323d76da399b47f3af5e6904.mesh" ]
+
+source_file="res://TempleAssets/Puzzle/Floor/Puzzle_Floor_Conduit_Rotating_Platform_TJoint.obj"
+dest_files=[ "res://.import/Puzzle_Floor_Conduit_Rotating_Platform_TJoint.obj-d0760857323d76da399b47f3af5e6904.mesh", "res://.import/Puzzle_Floor_Conduit_Rotating_Platform_TJoint.obj-d0760857323d76da399b47f3af5e6904.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

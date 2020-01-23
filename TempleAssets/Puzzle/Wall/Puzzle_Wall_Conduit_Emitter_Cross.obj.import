@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Puzzle_Wall_Conduit_Emitter_Cross.obj-b4a2738c7d3f47e942ba154581aaee66.mesh"
+
+[deps]
+
+files=[ "res://.import/Puzzle_Wall_Conduit_Emitter_Cross.obj-b4a2738c7d3f47e942ba154581aaee66.mesh" ]
+
+source_file="res://TempleAssets/Puzzle/Wall/Puzzle_Wall_Conduit_Emitter_Cross.obj"
+dest_files=[ "res://.import/Puzzle_Wall_Conduit_Emitter_Cross.obj-b4a2738c7d3f47e942ba154581aaee66.mesh", "res://.import/Puzzle_Wall_Conduit_Emitter_Cross.obj-b4a2738c7d3f47e942ba154581aaee66.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

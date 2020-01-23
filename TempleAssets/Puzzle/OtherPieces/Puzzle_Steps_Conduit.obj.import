@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Puzzle_Steps_Conduit.obj-4fb00650e904d52bec56a8617bed3ffa.mesh"
+
+[deps]
+
+files=[ "res://.import/Puzzle_Steps_Conduit.obj-4fb00650e904d52bec56a8617bed3ffa.mesh" ]
+
+source_file="res://TempleAssets/Puzzle/OtherPieces/Puzzle_Steps_Conduit.obj"
+dest_files=[ "res://.import/Puzzle_Steps_Conduit.obj-4fb00650e904d52bec56a8617bed3ffa.mesh", "res://.import/Puzzle_Steps_Conduit.obj-4fb00650e904d52bec56a8617bed3ffa.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

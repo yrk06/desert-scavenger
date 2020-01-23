@@ -1,0 +1,933 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://TempleAssets/Floor/Floor_Normal_Square.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://TempleAssets/Walls/Wall_Straight_Doorway.obj" type="ArrayMesh" id=2]
+[ext_resource path="res://TempleAssets/Walls/Wall_Straight_Base.obj" type="ArrayMesh" id=3]
+[ext_resource path="res://TempleAssets/Walls/Wall_End_Base.obj" type="ArrayMesh" id=4]
+[ext_resource path="res://TempleAssets/Walls/Wall_Straight_Window.obj" type="ArrayMesh" id=5]
+[ext_resource path="res://TempleAssets/Walls/Wall_Straight_Middle.obj" type="ArrayMesh" id=6]
+[ext_resource path="res://TempleAssets/Walls/Wall_End_Middle.obj" type="ArrayMesh" id=7]
+[ext_resource path="res://TempleAssets/Walls/Wall_End_Top.obj" type="ArrayMesh" id=8]
+[ext_resource path="res://TempleAssets/Walls/Wall_Straight_Top.obj" type="ArrayMesh" id=9]
+
+[node name="Temple" type="Spatial"]
+
+[node name="Floor" type="Spatial" parent="."]
+editor/display_folded = true
+
+[node name="Floor_Normal_Square" type="MeshInstance" parent="Floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square2" type="MeshInstance" parent="Floor"]
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square3" type="MeshInstance" parent="Floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square4" type="MeshInstance" parent="Floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square5" type="MeshInstance" parent="Floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square6" type="MeshInstance" parent="Floor"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -1 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor2" type="Spatial" parent="."]
+editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2 )
+
+[node name="Floor_Normal_Square" type="MeshInstance" parent="Floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square2" type="MeshInstance" parent="Floor2"]
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square3" type="MeshInstance" parent="Floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square4" type="MeshInstance" parent="Floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square5" type="MeshInstance" parent="Floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square6" type="MeshInstance" parent="Floor2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -1 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor3" type="Spatial" parent="."]
+editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -2 )
+
+[node name="Floor_Normal_Square" type="MeshInstance" parent="Floor3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square2" type="MeshInstance" parent="Floor3"]
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square3" type="MeshInstance" parent="Floor3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square4" type="MeshInstance" parent="Floor3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square5" type="MeshInstance" parent="Floor3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square6" type="MeshInstance" parent="Floor3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -1 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor7" type="Spatial" parent="."]
+editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -4 )
+
+[node name="Floor_Normal_Square" type="MeshInstance" parent="Floor7"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square2" type="MeshInstance" parent="Floor7"]
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square3" type="MeshInstance" parent="Floor7"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square4" type="MeshInstance" parent="Floor7"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square5" type="MeshInstance" parent="Floor7"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square6" type="MeshInstance" parent="Floor7"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -1 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor8" type="Spatial" parent="."]
+editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -4 )
+
+[node name="Floor_Normal_Square" type="MeshInstance" parent="Floor8"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square2" type="MeshInstance" parent="Floor8"]
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square3" type="MeshInstance" parent="Floor8"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square4" type="MeshInstance" parent="Floor8"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square5" type="MeshInstance" parent="Floor8"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square6" type="MeshInstance" parent="Floor8"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -1 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor9" type="Spatial" parent="."]
+editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -4 )
+
+[node name="Floor_Normal_Square" type="MeshInstance" parent="Floor9"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square7" type="MeshInstance" parent="Floor9"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square2" type="MeshInstance" parent="Floor9"]
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square3" type="MeshInstance" parent="Floor9"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square4" type="MeshInstance" parent="Floor9"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square5" type="MeshInstance" parent="Floor9"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square6" type="MeshInstance" parent="Floor9"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -1 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square8" type="MeshInstance" parent="Floor9"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -1 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor4" type="Spatial" parent="."]
+editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0 )
+
+[node name="Floor_Normal_Square" type="MeshInstance" parent="Floor4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square2" type="MeshInstance" parent="Floor4"]
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square3" type="MeshInstance" parent="Floor4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square4" type="MeshInstance" parent="Floor4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square7" type="MeshInstance" parent="Floor4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square8" type="MeshInstance" parent="Floor4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -1 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square10" type="MeshInstance" parent="Floor4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -2 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square9" type="MeshInstance" parent="Floor4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -3 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square5" type="MeshInstance" parent="Floor4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square6" type="MeshInstance" parent="Floor4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -1 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor5" type="Spatial" parent="."]
+editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 0 )
+
+[node name="Floor_Normal_Square" type="MeshInstance" parent="Floor5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square2" type="MeshInstance" parent="Floor5"]
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square3" type="MeshInstance" parent="Floor5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square4" type="MeshInstance" parent="Floor5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square5" type="MeshInstance" parent="Floor5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square6" type="MeshInstance" parent="Floor5"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -1 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor6" type="Spatial" parent="."]
+editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -2 )
+
+[node name="Floor_Normal_Square" type="MeshInstance" parent="Floor6"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square2" type="MeshInstance" parent="Floor6"]
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square3" type="MeshInstance" parent="Floor6"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square4" type="MeshInstance" parent="Floor6"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square5" type="MeshInstance" parent="Floor6"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Floor_Normal_Square6" type="MeshInstance" parent="Floor6"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -1 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Wall_Straight_Doorway" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1 )
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+
+[node name="bases" type="Spatial" parent="."]
+editor/display_folded = true
+
+[node name="Wall_Straight_Base" type="MeshInstance" parent="bases"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -1 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="Wall_Straight_Base15" type="MeshInstance" parent="bases"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -1 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="Wall_Straight_Base16" type="MeshInstance" parent="bases"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -1 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="Wall_Straight_Base6" type="MeshInstance" parent="bases"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -6 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="Wall_Straight_Base8" type="MeshInstance" parent="bases"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -6 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="Wall_Straight_Base11" type="MeshInstance" parent="bases"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -6 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="Wall_Straight_Base3" type="MeshInstance" parent="bases"]
+transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, 4, 0, -1 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="Wall_Straight_Base4" type="MeshInstance" parent="bases"]
+transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, 4, 0, -3 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="Wall_Straight_Base5" type="MeshInstance" parent="bases"]
+transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, 4, 0, -4 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="Wall_Straight_Base12" type="MeshInstance" parent="bases"]
+transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, -5, 0, -4 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="Wall_Straight_Base13" type="MeshInstance" parent="bases"]
+transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, -5, 0, -2 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="Wall_Straight_Base14" type="MeshInstance" parent="bases"]
+transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, -5, 0, -1 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="Wall_Straight_Base2" type="MeshInstance" parent="bases"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -1 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="Wall_Straight_Base7" type="MeshInstance" parent="bases"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -6 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="Wall_Straight_Base10" type="MeshInstance" parent="bases"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -6 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="Wall_Straight_Base9" type="MeshInstance" parent="bases"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6 )
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="Wall_End_Base" type="MeshInstance" parent="bases"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -1 )
+mesh = ExtResource( 4 )
+material/0 = null
+
+[node name="Wall_End_Base4" type="MeshInstance" parent="bases"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -1 )
+mesh = ExtResource( 4 )
+material/0 = null
+
+[node name="Wall_End_Base2" type="MeshInstance" parent="bases"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -6 )
+mesh = ExtResource( 4 )
+material/0 = null
+
+[node name="Wall_End_Base3" type="MeshInstance" parent="bases"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -6 )
+mesh = ExtResource( 4 )
+material/0 = null
+
+[node name="Wall" type="Spatial" parent="."]
+editor/display_folded = true
+
+[node name="Wall_Straight_Window" type="MeshInstance" parent="Wall"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, -0.00157946, -1 )
+mesh = ExtResource( 5 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Wall_Straight_Window4" type="MeshInstance" parent="Wall"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, -0.00157946, -6 )
+mesh = ExtResource( 5 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Wall_Straight_Window2" type="MeshInstance" parent="Wall"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -0.00157946, -1 )
+mesh = ExtResource( 5 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Wall_Straight_Window3" type="MeshInstance" parent="Wall"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, -0.00157946, -6 )
+mesh = ExtResource( 5 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Wall_Straight_Middle" type="MeshInstance" parent="Wall"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, -0.00157946, -1 )
+mesh = ExtResource( 6 )
+material/0 = null
+material/1 = null
+
+[node name="Wall_Straight_Middle20" type="MeshInstance" parent="Wall"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1.99842, -1 )
+mesh = ExtResource( 6 )
+material/0 = null
+material/1 = null
+
+[node name="Wall_Straight_Middle25" type="MeshInstance" parent="Wall"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 1.99842, -1 )
+mesh = ExtResource( 6 )
+material/0 = null
+material/1 = null
+
+[node name="Wall_Straight_Middle26" type="MeshInstance" parent="Wall"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 1.99842, -1 )
+mesh = ExtResource( 6 )
+material/0 = null
+material/1 = null
+
+[node name="Wall_Straight_Middle2" type="MeshInstance" parent="Wall"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, -0.00157946, -1 )
+mesh = ExtResource( 6 )
+material/0 = null
+material/1 = null
+
+[node name="Wall_Straight_Middle13" type="MeshInstance" parent="Wall"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 1.99842, -1 )
+mesh = ExtResource( 6 )
+material/0 = null
+material/1 = null
+
+[node name="Wall_Straight_Middle3" type="MeshInstance" parent="Wall"]
+transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, -3, -0.00157946, -1 )
+mesh = ExtResource( 6 )
+material/0 = null
+material/1 = null
+
+[node name="Wall_Straight_Middle15" type="MeshInstance" parent="Wall"]
+transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, -3, 1.99842, -1 )
+mesh = ExtResource( 6 )
+material/0 = null
+material/1 = null
+
+[node name="Wall_Straight_Middle4" type="MeshInstance" parent="Wall"]
+transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, -3, -0.00157946, -3 )
+mesh = ExtResource( 6 )
+material/0 = null
+material/1 = null
+
+[node name="Wall_Straight_Middle14" type="MeshInstance" parent="Wall"]
+transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, -3, 1.99842, -3 )
+mesh = ExtResource( 6 )
+material/0 = null
+material/1 = null
+
+[node name="Wall_Straight_Middle9" type="MeshInstance" parent="Wall"]
+transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, 6, -0.00157946, -4 )
+mesh = ExtResource( 6 )
+material/0 = null
+material/1 = null
+
+[node name="Wall_Straight_Middle22" type="MeshInstance" parent="Wall"]
+transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, 6, 1.99842, -4 )
+mesh = ExtResource( 6 )
+material/0 = null
+material/1 = null
+
+[node name="Wall_Straight_Middle10" type="MeshInstance" parent="Wall"]
+transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, 6, -0.00157946, -2 )
+mesh = ExtResource( 6 )
+material/0 = null
+material/1 = null
+
+[node name="Wall_Straight_Middle19" type="MeshInstance" parent="Wall"]
+transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, 6, 1.99842, -2 )
+mesh = ExtResource( 6 )
+material/0 = null
+material/1 = null
+
+[node name="Wall_Straight_Middle11" type="MeshInstance" parent="Wall"]
+transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, 6, -0.00157946, -1 )
+mesh = ExtResource( 6 )
+material/0 = null
+material/1 = null
+
+[node name="Wall_Straight_Middle17" type="MeshInstance" parent="Wall"]
+transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, 6, 1.99842, -1 )
+mesh = ExtResource( 6 )
+material/0 = null
+material/1 = null
+
+[node name="Wall_Straight_Middle5" type="MeshInstance" parent="Wall"]
+transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, -3, -0.00157946, -4 )
+mesh = ExtResource( 6 )
+material/0 = null
+material/1 = null
+
+[node name="Wall_Straight_Middle12" type="MeshInstance" parent="Wall"]
+transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, -3, 1.99842, -4 )
+mesh = ExtResource( 6 )
+material/0 = null
+material/1 = null
+
+[node name="Wall_Straight_Middle6" type="MeshInstance" parent="Wall"]
+transform = Transform( -1, 0, 8.74228e-008, 0, 1, 0, -8.74228e-008, 0, -1, 1, -0.00157946, -4 )
+mesh = ExtResource( 6 )
+material/0 = null
+material/1 = null
+
+[node name="Wall_Straight_Middle21" type="MeshInstance" parent="Wall"]
+transform = Transform( -1, 0, 8.74228e-008, 0, 1, 0, -8.74228e-008, 0, -1, 1, 1.99842, -4 )
+mesh = ExtResource( 6 )
+material/0 = null
+material/1 = null
+
+[node name="Wall_Straight_Middle23" type="MeshInstance" parent="Wall"]
+transform = Transform( -1, 0, 8.74228e-008, 0, 1, 0, -8.74228e-008, 0, -1, -1, 1.99842, -4 )
+mesh = ExtResource( 6 )
+material/0 = null
+material/1 = null
+
+[node name="Wall_Straight_Middle24" type="MeshInstance" parent="Wall"]
+transform = Transform( -1, 0, 8.74228e-008, 0, 1, 0, -8.74228e-008, 0, -1, -3, 1.99842, -4 )
+mesh = ExtResource( 6 )
+material/0 = null
+material/1 = null
+
+[node name="Wall_Straight_Middle7" type="MeshInstance" parent="Wall"]
+transform = Transform( -1, 0, 8.74228e-008, 0, 1, 0, -8.74228e-008, 0, -1, 3, -0.00157946, -4 )
+mesh = ExtResource( 6 )
+material/0 = null
+material/1 = null
+
+[node name="Wall_Straight_Middle18" type="MeshInstance" parent="Wall"]
+transform = Transform( -1, 0, 8.74228e-008, 0, 1, 0, -8.74228e-008, 0, -1, 3, 1.99842, -4 )
+mesh = ExtResource( 6 )
+material/0 = null
+material/1 = null
+
+[node name="Wall_Straight_Middle8" type="MeshInstance" parent="Wall"]
+transform = Transform( -1, 0, 8.74228e-008, 0, 1, 0, -8.74228e-008, 0, -1, 4, -0.00157946, -4 )
+mesh = ExtResource( 6 )
+material/0 = null
+material/1 = null
+
+[node name="Wall_Straight_Middle16" type="MeshInstance" parent="Wall"]
+transform = Transform( -1, 0, 8.74228e-008, 0, 1, 0, -8.74228e-008, 0, -1, 4, 1.99842, -4 )
+mesh = ExtResource( 6 )
+material/0 = null
+material/1 = null
+
+[node name="Corner" type="Spatial" parent="."]
+editor/display_folded = true
+
+[node name="Wall_End_Middle" type="MeshInstance" parent="Corner"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -1 )
+mesh = ExtResource( 7 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Wall_End_Middle2" type="MeshInstance" parent="Corner"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 2, -1 )
+mesh = ExtResource( 7 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Wall_End_Top" type="MeshInstance" parent="Corner"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 2.3, -1 )
+mesh = ExtResource( 8 )
+material/0 = null
+
+[node name="Corner2" type="Spatial" parent="."]
+editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5 )
+
+[node name="Wall_End_Middle" type="MeshInstance" parent="Corner2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -1 )
+mesh = ExtResource( 7 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Wall_End_Middle2" type="MeshInstance" parent="Corner2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 2, -1 )
+mesh = ExtResource( 7 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Wall_End_Top" type="MeshInstance" parent="Corner2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 2.3, -1 )
+mesh = ExtResource( 8 )
+material/0 = null
+
+[node name="Corner3" type="Spatial" parent="."]
+editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, -5 )
+
+[node name="Wall_End_Middle" type="MeshInstance" parent="Corner3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -1 )
+mesh = ExtResource( 7 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Wall_End_Middle2" type="MeshInstance" parent="Corner3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 2, -1 )
+mesh = ExtResource( 7 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Wall_End_Top" type="MeshInstance" parent="Corner3"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 2.3, -1 )
+mesh = ExtResource( 8 )
+material/0 = null
+
+[node name="Corner4" type="Spatial" parent="."]
+editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, 0 )
+
+[node name="Wall_End_Middle" type="MeshInstance" parent="Corner4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -1 )
+mesh = ExtResource( 7 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Wall_End_Middle2" type="MeshInstance" parent="Corner4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 2, -1 )
+mesh = ExtResource( 7 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="Wall_End_Top" type="MeshInstance" parent="Corner4"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 2.3, -1 )
+mesh = ExtResource( 8 )
+material/0 = null
+
+[node name="Wall_Straight_Top" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 2.3, -1 )
+mesh = ExtResource( 9 )
+material/0 = null
+
+[node name="Wall_Straight_Top10" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 2.3, -6 )
+mesh = ExtResource( 9 )
+material/0 = null
+
+[node name="Wall_Straight_Top5" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.97181, 2.3, -1 )
+mesh = ExtResource( 9 )
+material/0 = null
+
+[node name="Wall_Straight_Top9" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.97181, 2.3, -6 )
+mesh = ExtResource( 9 )
+material/0 = null
+
+[node name="Wall_Straight_Top11" type="MeshInstance" parent="."]
+transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, 4, 2.3, -1 )
+mesh = ExtResource( 9 )
+material/0 = null
+
+[node name="Wall_Straight_Top14" type="MeshInstance" parent="."]
+transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, -5, 2.3, -1 )
+mesh = ExtResource( 9 )
+material/0 = null
+
+[node name="Wall_Straight_Top12" type="MeshInstance" parent="."]
+transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, 4, 2.3, -2 )
+mesh = ExtResource( 9 )
+material/0 = null
+
+[node name="Wall_Straight_Top15" type="MeshInstance" parent="."]
+transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, -5, 2.3, -2 )
+mesh = ExtResource( 9 )
+material/0 = null
+
+[node name="Wall_Straight_Top13" type="MeshInstance" parent="."]
+transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, 4, 2.3, -4 )
+mesh = ExtResource( 9 )
+material/0 = null
+
+[node name="Wall_Straight_Top16" type="MeshInstance" parent="."]
+transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, -5, 2.3, -4 )
+mesh = ExtResource( 9 )
+material/0 = null
+
+[node name="Wall_Straight_Top2" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 2.3, -1 )
+mesh = ExtResource( 9 )
+material/0 = null
+
+[node name="Wall_Straight_Top7" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 2.3, -6 )
+mesh = ExtResource( 9 )
+material/0 = null
+
+[node name="Wall_Straight_Top3" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 2.3, -1 )
+mesh = ExtResource( 9 )
+material/0 = null
+
+[node name="Wall_Straight_Top6" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 2.3, -6 )
+mesh = ExtResource( 9 )
+material/0 = null
+
+[node name="Wall_Straight_Top4" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 2.3, -1 )
+mesh = ExtResource( 9 )
+material/0 = null
+
+[node name="Wall_Straight_Top8" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 2.3, -6 )
+mesh = ExtResource( 9 )
+material/0 = null

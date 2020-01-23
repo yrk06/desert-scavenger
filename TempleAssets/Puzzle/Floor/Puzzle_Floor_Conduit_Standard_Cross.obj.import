@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Puzzle_Floor_Conduit_Standard_Cross.obj-a8dcccf13ff94f95ee046c6f11b77fef.mesh"
+
+[deps]
+
+files=[ "res://.import/Puzzle_Floor_Conduit_Standard_Cross.obj-a8dcccf13ff94f95ee046c6f11b77fef.mesh" ]
+
+source_file="res://TempleAssets/Puzzle/Floor/Puzzle_Floor_Conduit_Standard_Cross.obj"
+dest_files=[ "res://.import/Puzzle_Floor_Conduit_Standard_Cross.obj-a8dcccf13ff94f95ee046c6f11b77fef.mesh", "res://.import/Puzzle_Floor_Conduit_Standard_Cross.obj-a8dcccf13ff94f95ee046c6f11b77fef.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

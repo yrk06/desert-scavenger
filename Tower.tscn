@@ -1,0 +1,113 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://TempleAssets/Walls/Wall_Arch_Corner_Inner.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://TempleAssets/Walls/Wall_Ruined_Half_2.obj" type="ArrayMesh" id=2]
+[ext_resource path="res://TempleAssets/Walls/Wall_Ruined_Half_1.obj" type="ArrayMesh" id=3]
+
+[node name="Tower" type="Spatial"]
+
+[node name="Wall_Arch_Corner_Inner" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 1 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+
+[node name="Wall_Arch_Corner_Inner5" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 4, 1 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+
+[node name="Wall_Arch_Corner_Inner10" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 8, 1 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+
+[node name="Wall_Arch_Corner_Inner3" type="MeshInstance" parent="."]
+transform = Transform( -1, 0, -8.74228e-008, 0, 1, 0, 8.74228e-008, 0, -1, 1, 0, -1 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+
+[node name="Wall_Arch_Corner_Inner7" type="MeshInstance" parent="."]
+transform = Transform( -1, 0, -8.74228e-008, 0, 1, 0, 8.74228e-008, 0, -1, 1, 4, -1 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+
+[node name="Wall_Arch_Corner_Inner12" type="MeshInstance" parent="."]
+transform = Transform( -1, 0, -8.74228e-008, 0, 1, 0, 8.74228e-008, 0, -1, 1, 8, -1 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+
+[node name="Wall_Arch_Corner_Inner2" type="MeshInstance" parent="."]
+transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, 1, 0, 1 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+
+[node name="Wall_Arch_Corner_Inner8" type="MeshInstance" parent="."]
+transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, 1, 4, 1 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+
+[node name="Wall_Arch_Corner_Inner9" type="MeshInstance" parent="."]
+transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, 1, 8, 1 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+
+[node name="Wall_Arch_Corner_Inner4" type="MeshInstance" parent="."]
+transform = Transform( 1.31134e-007, 0, -1, 0, 1, 0, 1, 0, 1.31134e-007, -1, 0, -1 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+
+[node name="Wall_Arch_Corner_Inner6" type="MeshInstance" parent="."]
+transform = Transform( 1.31134e-007, 0, -1, 0, 1, 0, 1, 0, 1.31134e-007, -1, 4, -1 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+
+[node name="Wall_Arch_Corner_Inner11" type="MeshInstance" parent="."]
+transform = Transform( 1.31134e-007, 0, -1, 0, 1, 0, 1, 0, 1.31134e-007, -1, 8, -1 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+
+[node name="Wall_Ruined_Half_2" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 12, 1 )
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="Wall_Ruined_Half_4" type="MeshInstance" parent="."]
+transform = Transform( -1, 0, -8.74228e-008, 0, 1, 0, 8.74228e-008, 0, -1, -5.96046e-008, 12, -1 )
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="Wall_Ruined_Half_1" type="MeshInstance" parent="."]
+transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, 1, 12, 0 )
+mesh = ExtResource( 3 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+
+[node name="Wall_Ruined_Half_3" type="MeshInstance" parent="."]
+transform = Transform( 1.31134e-007, 0, -1, 0, 1, 0, 1, 0, 1.31134e-007, -1, 12, 1.19209e-007 )
+mesh = ExtResource( 3 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null

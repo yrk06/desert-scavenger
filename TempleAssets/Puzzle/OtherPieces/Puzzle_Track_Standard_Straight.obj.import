@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Puzzle_Track_Standard_Straight.obj-caed388b11a9db2ae08f84235b755ceb.mesh"
+
+[deps]
+
+files=[ "res://.import/Puzzle_Track_Standard_Straight.obj-caed388b11a9db2ae08f84235b755ceb.mesh" ]
+
+source_file="res://TempleAssets/Puzzle/OtherPieces/Puzzle_Track_Standard_Straight.obj"
+dest_files=[ "res://.import/Puzzle_Track_Standard_Straight.obj-caed388b11a9db2ae08f84235b755ceb.mesh", "res://.import/Puzzle_Track_Standard_Straight.obj-caed388b11a9db2ae08f84235b755ceb.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Floor_Tower_Balcony.obj-590f541818f98657dd2da8c0e167f2ea.mesh"
+
+[deps]
+
+files=[ "res://.import/Floor_Tower_Balcony.obj-590f541818f98657dd2da8c0e167f2ea.mesh" ]
+
+source_file="res://TempleAssets/Floor/Floor_Tower_Balcony.obj"
+dest_files=[ "res://.import/Floor_Tower_Balcony.obj-590f541818f98657dd2da8c0e167f2ea.mesh", "res://.import/Floor_Tower_Balcony.obj-590f541818f98657dd2da8c0e167f2ea.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

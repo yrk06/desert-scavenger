@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Tower_Parapet_Braced_Crowned.obj-aaeff2aa1820a60c75518e0d126662e1.mesh"
+
+[deps]
+
+files=[ "res://.import/Tower_Parapet_Braced_Crowned.obj-aaeff2aa1820a60c75518e0d126662e1.mesh" ]
+
+source_file="res://TempleAssets/Tower/Tower_Parapet_Braced_Crowned.obj"
+dest_files=[ "res://.import/Tower_Parapet_Braced_Crowned.obj-aaeff2aa1820a60c75518e0d126662e1.mesh", "res://.import/Tower_Parapet_Braced_Crowned.obj-aaeff2aa1820a60c75518e0d126662e1.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

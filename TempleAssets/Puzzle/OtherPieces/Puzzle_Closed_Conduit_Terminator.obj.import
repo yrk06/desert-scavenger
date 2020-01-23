@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Puzzle_Closed_Conduit_Terminator.obj-d1ac0253ca03ef1a8bb1f078d3a3ef1c.mesh"
+
+[deps]
+
+files=[ "res://.import/Puzzle_Closed_Conduit_Terminator.obj-d1ac0253ca03ef1a8bb1f078d3a3ef1c.mesh" ]
+
+source_file="res://TempleAssets/Puzzle/OtherPieces/Puzzle_Closed_Conduit_Terminator.obj"
+dest_files=[ "res://.import/Puzzle_Closed_Conduit_Terminator.obj-d1ac0253ca03ef1a8bb1f078d3a3ef1c.mesh", "res://.import/Puzzle_Closed_Conduit_Terminator.obj-d1ac0253ca03ef1a8bb1f078d3a3ef1c.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

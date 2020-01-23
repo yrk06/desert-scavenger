@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://TempleAssets/Water.tres" type="Material" id=1]
+
+[sub_resource type="PlaneMesh" id=1]
+resource_local_to_scene = true
+size = Vector2( 10, 10 )
+subdivide_width = 10
+subdivide_depth = 10
+
+[node name="Walter" type="MeshInstance"]
+mesh = SubResource( 1 )
+material/0 = ExtResource( 1 )

@@ -16,6 +16,8 @@ export var CROUCH_MOD = 0.5
 export var GRAVITY = 4
 export var JUMP_SPEED = 40
 
+var Bullet = preload("res://Bullet.tscn")
+
 var direction = Vector3()
 var vel = Vector3()
 var isInControl = true
@@ -43,9 +45,10 @@ func _physics_process(delta):
 	pass
 
 func _input(event):
-	if event is InputEventMouseMotion and Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
-		$RotationHelper.rotate_x(-event.relative.y * MOUSE_SENS)
-		self.rotate_y(-event.relative.x * MOUSE_SENS)
+	if isInControl:
+		if event is InputEventMouseMotion and Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
+			$RotationHelper.rotate_x(-event.relative.y * MOUSE_SENS)
+			self.rotate_y(-event.relative.x * MOUSE_SENS)
 		
 	$RotationHelper.rotation_degrees.x = clamp($RotationHelper.rotation_degrees.x,-70,70)
 	pass
@@ -74,6 +77,9 @@ func process_input(delta):
 	if Input.is_action_just_pressed("jump"):
 		if is_on_floor():
 			vel.y = JUMP_SPEED
+	
+	if Input.is_action_just_pressed("fire"):
+		fireBullet()
 	
 func process_movement(delta):
 	direction.y = 0
@@ -108,5 +114,14 @@ func unCrouch():
 	isCrouching = false
 	pass
 
-func Jump():
+func fireBullet():
+	print("Created Bullet")
+	var CurrentBullet = Bullet.instance()
+	#CurrentBullet.translation = $RotationHelper/Camera.translation + $RotationHelper.translation + translation + Vector3(0.0,1.0,0.0)
+	#CurrentBullet.rotation = $RotationHelper/Camera.rotation + + $RotationHelper.rotation + rotation
+	get_tree().get_root().add_child(CurrentBullet)
+	CurrentBullet.global_transform = $RotationHelper/Camera/BulletSpace.global_transform
+	print(CurrentBullet.translation)
+	print(translation)
+	CurrentBullet.fire()
 	pass

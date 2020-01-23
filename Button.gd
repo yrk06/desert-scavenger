@@ -5,10 +5,13 @@ extends Spatial
 # var b = "text"
 
 signal Pressed
+signal Unpressed
 export var ButtonName = "default"
 export var canBePressed = true
 export var once = false
 export var timeToReset = 1
+export var TwoState = false
+export var isPressed = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -19,7 +22,14 @@ func _ready():
 
 func OnPressed():
 	if canBePressed:
-		emit_signal("Pressed",ButtonName)
+		if TwoState:
+			isPressed = !isPressed
+			if isPressed:
+				emit_signal("Pressed",ButtonName)
+			else:
+				emit_signal("Unpressed",ButtonName)
+		else:
+			emit_signal("Pressed",ButtonName)
 		print("Button: " + ButtonName + " has been pressed")
 		if !once:
 			$Timer.start()

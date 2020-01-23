@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Floor_Ruined_Corner_Inner_1.obj-1740a2d666298edcb0611e1894323dfa.mesh"
+
+[deps]
+
+files=[ "res://.import/Floor_Ruined_Corner_Inner_1.obj-1740a2d666298edcb0611e1894323dfa.mesh" ]
+
+source_file="res://TempleAssets/Floor/Floor_Ruined_Corner_Inner_1.obj"
+dest_files=[ "res://.import/Floor_Ruined_Corner_Inner_1.obj-1740a2d666298edcb0611e1894323dfa.mesh", "res://.import/Floor_Ruined_Corner_Inner_1.obj-1740a2d666298edcb0611e1894323dfa.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Puzzle_Wall_Conduit_Keyhole_TJoint.obj-847231e10e5c337f9af520ccf7f55e2f.mesh"
+
+[deps]
+
+files=[ "res://.import/Puzzle_Wall_Conduit_Keyhole_TJoint.obj-847231e10e5c337f9af520ccf7f55e2f.mesh" ]
+
+source_file="res://TempleAssets/Puzzle/Wall/Puzzle_Wall_Conduit_Keyhole_TJoint.obj"
+dest_files=[ "res://.import/Puzzle_Wall_Conduit_Keyhole_TJoint.obj-847231e10e5c337f9af520ccf7f55e2f.mesh", "res://.import/Puzzle_Wall_Conduit_Keyhole_TJoint.obj-847231e10e5c337f9af520ccf7f55e2f.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

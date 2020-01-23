@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Puzzle_Wall_Conduit_Keyhole_Cross.obj-d8ac4bb85808e7458db51d1faf8ae6c4.mesh"
+
+[deps]
+
+files=[ "res://.import/Puzzle_Wall_Conduit_Keyhole_Cross.obj-d8ac4bb85808e7458db51d1faf8ae6c4.mesh" ]
+
+source_file="res://TempleAssets/Puzzle/Wall/Puzzle_Wall_Conduit_Keyhole_Cross.obj"
+dest_files=[ "res://.import/Puzzle_Wall_Conduit_Keyhole_Cross.obj-d8ac4bb85808e7458db51d1faf8ae6c4.mesh", "res://.import/Puzzle_Wall_Conduit_Keyhole_Cross.obj-d8ac4bb85808e7458db51d1faf8ae6c4.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

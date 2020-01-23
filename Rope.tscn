@@ -1,0 +1,58 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Rope.gd" type="Script" id=1]
+
+[sub_resource type="CapsuleMesh" id=1]
+radius = 0.1
+mid_height = 1.25
+
+[sub_resource type="CapsuleMesh" id=2]
+radius = 0.1
+mid_height = 1.25
+
+[sub_resource type="CapsuleMesh" id=3]
+radius = 0.1
+mid_height = 1.25
+
+[sub_resource type="CapsuleMesh" id=4]
+radius = 0.1
+mid_height = 1.25
+
+[node name="Rope" type="Spatial"]
+script = ExtResource( 1 )
+Resolution = 4
+Weight = 1
+PointOne = Vector3( 10, 0, 0 )
+lenght = 10.0
+
+[node name="PointOne" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 0 )
+
+[node name="HingeJoint45" type="HingeJoint" parent="PointOne"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0 )
+
+[node name="PointTwo" type="Spatial" parent="."]
+
+[node name="HingeJoint17" type="HingeJoint" parent="."]
+
+[node name="HingeJoint18" type="HingeJoint" parent="."]
+
+[node name="HingeJoint19" type="HingeJoint" parent="."]
+
+[node name="HingeJoint20" type="HingeJoint" parent="."]
+
+[node name="MeshInstance13" type="MeshInstance" parent="."]
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="MeshInstance14" type="MeshInstance" parent="."]
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="MeshInstance15" type="MeshInstance" parent="."]
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="MeshInstance16" type="MeshInstance" parent="."]
+mesh = SubResource( 4 )
+material/0 = null

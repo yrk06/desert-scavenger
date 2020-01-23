@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/mummy_body.obj-8fede0ef2a362b2f18985c9af99d0e91.mesh"
+
+[deps]
+
+files=[ "res://.import/mummy_body.obj-8fede0ef2a362b2f18985c9af99d0e91.mesh" ]
+
+source_file="res://Mummy/mummy_body.obj"
+dest_files=[ "res://.import/mummy_body.obj-8fede0ef2a362b2f18985c9af99d0e91.mesh", "res://.import/mummy_body.obj-8fede0ef2a362b2f18985c9af99d0e91.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

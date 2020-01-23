@@ -1,0 +1,36 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=2]
+
+[ext_resource path="res://Textures/fog.png" type="Texture" id=1]
+
+[sub_resource type="Shader" id=1]
+code = "shader_type spatial;
+
+uniform sampler2D Smoke;
+uniform float Period = 4.0;
+uniform float Magnitude = 0.01;
+uniform float offset = 0.0;
+uniform float alphaOffset = -0.05;
+
+void vertex()
+{	
+	
+}
+
+void fragment()
+{
+	float Mod = Magnitude * sin(offset + TIME*2.0*3.14/Period);
+	ALBEDO = texture(Smoke,UV/1000.0+Mod).rgb * vec3(0.7,0.5,0.3);	
+	ALPHA = texture(Smoke,UV+Mod).a + alphaOffset;
+	
+	
+	
+	
+}"
+
+[resource]
+shader = SubResource( 1 )
+shader_param/Period = 4.0
+shader_param/Magnitude = 0.01
+shader_param/offset = 0.0
+shader_param/alphaOffset = -0.05
+shader_param/Smoke = ExtResource( 1 )

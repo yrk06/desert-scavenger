@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Puzzle_Sliding_Pillar_Platform_Top.obj-ce059bd0ff39bbddc93130ef8decba1d.mesh"
+
+[deps]
+
+files=[ "res://.import/Puzzle_Sliding_Pillar_Platform_Top.obj-ce059bd0ff39bbddc93130ef8decba1d.mesh" ]
+
+source_file="res://TempleAssets/Puzzle/OtherPieces/Puzzle_Sliding_Pillar_Platform_Top.obj"
+dest_files=[ "res://.import/Puzzle_Sliding_Pillar_Platform_Top.obj-ce059bd0ff39bbddc93130ef8decba1d.mesh", "res://.import/Puzzle_Sliding_Pillar_Platform_Top.obj-ce059bd0ff39bbddc93130ef8decba1d.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

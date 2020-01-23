@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Floor_Bridge_Ramp.obj-d4e574545810d39e69d395ff89f63a28.mesh"
+
+[deps]
+
+files=[ "res://.import/Floor_Bridge_Ramp.obj-d4e574545810d39e69d395ff89f63a28.mesh" ]
+
+source_file="res://TempleAssets/Floor/Floor_Bridge_Ramp.obj"
+dest_files=[ "res://.import/Floor_Bridge_Ramp.obj-d4e574545810d39e69d395ff89f63a28.mesh", "res://.import/Floor_Bridge_Ramp.obj-d4e574545810d39e69d395ff89f63a28.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true
