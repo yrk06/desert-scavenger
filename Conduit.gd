@@ -12,13 +12,16 @@ var OnMat = preload("res://TempleAssets/Green_Stone_On.tres")
 export var Generator = false setget set_generator
 export (NodePath) var Button = "" 
 export (Mesh) var MeshType setget set_mesh
+var isOn = false
 
 
 func set_generator(value):
 	Generator = value
 	if Generator:
 		TurnOn(self)
+		isOn = true
 	else:
+		isOn = false
 		TurnOff(self)
 
 func set_mesh(value):
@@ -45,16 +48,18 @@ func _ready():
 
 func TurnOn(Who):
 	if Who != self:
-		WhoIsOn.append(Who)
+		if !(Who in WhoIsOn):
+			WhoIsOn.append(Who)
 	for i in facesToChange:
 		$Mesh.set_surface_material(i,OnMat)
 	if len(OtherConduits) != 0:
 		for c in OtherConduits:
 			var Bagulho = get_node(c)
-			if !(Bagulho in WhoIsOn):
-				print(c)
-				print(Bagulho)
-				Bagulho.TurnOn(self)
+			if Bagulho:
+				if !(Bagulho in WhoIsOn):
+					print(c)
+					print(Bagulho)
+					Bagulho.TurnOn(self)
 	pass
 func TurnOff(Who):
 	if !Generator:
