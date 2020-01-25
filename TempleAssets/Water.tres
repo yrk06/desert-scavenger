@@ -7,6 +7,7 @@ render_mode specular_toon;
 uniform sampler2D Noise;
 uniform float scale = 1.0;
 uniform float globalScale = 0.7;
+uniform float proximity_fade_distance = 1.0;
 
 float wave(float num)
 {
@@ -38,8 +39,12 @@ void fragment()
 	METALLIC = 0.0;
 	RIM = 0.2;
 	NORMAL = normalize(cross(dFdx(VERTEX), dFdy(VERTEX)));
-	ALBEDO = vec3(0.1,0.3,0.7)*0.1;
+	ALBEDO = vec3(0.1,0.3,0.7)*0.5;
 	
+	float depth_tex = textureLod(DEPTH_TEXTURE,SCREEN_UV,0.0).r;
+	vec4 world_pos = INV_PROJECTION_MATRIX * vec4(SCREEN_UV*2.0-1.0,depth_tex*2.0-1.0,1.0);
+	world_pos.xyz/=world_pos.w;
+	ALPHA*=clamp(1.0-smoothstep(world_pos.z+proximity_fade_distance,world_pos.z,VERTEX.z),0.0,1.0);
 	
 	
 }"
@@ -54,5 +59,6 @@ noise = SubResource( 2 )
 [resource]
 shader = SubResource( 1 )
 shader_param/scale = 1.0
-shader_param/globalScale = 0.3
+shader_param/globalScale = 0.05
+shader_param/proximity_fade_distance = 1.0
 shader_param/Noise = SubResource( 3 )
