@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://TempleAssets/Conduit.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Button.tscn" type="PackedScene" id=2]
+
+[node name="Spatial" type="Spatial"]
+
+[node name="Conduit" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.000306845, -0.00514352, 0.00514185 )
+OtherConduits = [ NodePath("Conduit2") ]
+ActiveConections = [ NodePath("Conduit2") ]
+
+[node name="Conduit2" parent="Conduit" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.999693, 0.00514352, -0.00514185 )
+OtherConduits = [ NodePath(".."), NodePath("Conduit3") ]
+ActiveConections = [ NodePath(".."), NodePath("Conduit3") ]
+
+[node name="Conduit3" parent="Conduit/Conduit2" instance=ExtResource( 1 )]
+transform = Transform( -1, 0, -8.74228e-008, 0, 1, 0, 8.74228e-008, 0, -1, 1, 0, 0 )
+OtherConduits = [ NodePath("..") ]
+Rotate = true
+RotateButton = NodePath("../../../Button")
+Type = 3
+ActiveConections = [ NodePath("..") ]
+
+[node name="Button" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.87886, 0.535033, 0.863815 )

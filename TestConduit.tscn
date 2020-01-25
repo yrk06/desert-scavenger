@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://TempleAssets/Conduit.tscn" type="PackedScene" id=1]
+[ext_resource path="res://TempleAssets/Puzzle/Floor/Puzzle_Floor_Conduit_Rotating_Platform_TJoint.obj" type="ArrayMesh" id=2]
+
+[node name="Spatial" type="Spatial"]
+
+[node name="Conduit" parent="." instance=ExtResource( 1 )]
+OtherConduits = [ NodePath("Conduit2") ]
+Generator = true
+MeshType = ExtResource( 2 )
+
+[node name="Conduit2" parent="Conduit" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.93469, 0, 0 )
+OtherConduits = [ NodePath(".."), NodePath(""), NodePath("Conduit3") ]
+WhoIsOn = [ Object(Spatial,"_import_path":NodePath(""),"pause_mode":0,"editor/display_folded":false,"transform":Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 ),"visible":true,"script":Resource( "res://Conduit.gd" ),"OtherConduits":[ NodePath("Conduit2") ],"WhoIsOn":[  ],"ActiveConection":[ NodePath("Conduit2") ],"Generator":true,"Button":NodePath(""),"ShouldRotate":false,"RotationType":0,"CurrentRotation":0,"RotationSpeed":10.0,"AngleToRotate":0,"RotateButton":NodePath(""),"animation":"idle","facesToChange":[ 0 ],"OffMat":Resource( "res://TempleAssets/Green_Stone_Default.tres" ),"OnMat":Resource( "res://TempleAssets/Green_Stone_On.tres" ),"MeshType":ExtResource( 2 ),"IsOn":true)
+ ]
+ShouldRotate = true
+RotationType = 3
+MeshType = ExtResource( 2 )
+
+[node name="Conduit3" parent="Conduit/Conduit2" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.972205, 0, 0 )
+OtherConduits = [ NodePath("..") ]
+WhoIsOn = [ Object(Spatial,"_import_path":NodePath(""),"pause_mode":0,"editor/display_folded":false,"transform":Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.93469, 0, 0 ),"visible":true,"script":Resource( "res://Conduit.gd" ),"OtherConduits":[ NodePath(".."), NodePath(""), NodePath("Conduit3") ],"WhoIsOn":[ Object(Spatial,"_import_path":NodePath(""),"pause_mode":0,"editor/display_folded":false,"transform":Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 ),"visible":true,"script":Resource( "res://Conduit.gd" ),"OtherConduits":[ NodePath("Conduit2") ],"WhoIsOn":[  ],"ActiveConection":[ NodePath("Conduit2") ],"Generator":true,"Button":NodePath(""),"ShouldRotate":false,"RotationType":0,"CurrentRotation":0,"RotationSpeed":10.0,"AngleToRotate":0,"RotateButton":NodePath(""),"animation":"idle","facesToChange":[ 0 ],"OffMat":Resource( "res://TempleAssets/Green_Stone_Default.tres" ),"OnMat":Resource( "res://TempleAssets/Green_Stone_On.tres" ),"MeshType":ExtResource( 2 ),"IsOn":true)
+ ],"ActiveConection":[ NodePath(".."), NodePath("Conduit3") ],"Generator":false,"Button":NodePath(""),"ShouldRotate":true,"RotationType":3,"CurrentRotation":0,"RotationSpeed":10.0,"AngleToRotate":0,"RotateButton":NodePath(""),"animation":"idle","facesToChange":[ 0 ],"OffMat":Resource( "res://TempleAssets/Green_Stone_Default.tres" ),"OnMat":Resource( "res://TempleAssets/Green_Stone_On.tres" ),"MeshType":ExtResource( 2 ),"IsOn":true)
+ ]
+RotationType = 3
+MeshType = ExtResource( 2 )
