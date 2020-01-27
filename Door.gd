@@ -14,6 +14,9 @@ var Speed = 1
 var animation = "idle"
 export (NodePath) var ButtonName
 
+export (NodePath) var circuit
+export var CircuitOut = 1
+
 func set_particle_pos(value):
 	if $Particles:
 		ParticlePosition = value
@@ -31,6 +34,10 @@ func _ready():
 	if NodeButton:
 		NodeButton.connect("Pressed",self,"b_open")
 		NodeButton.connect("Unpressed",self,"b_close")
+	var CNode = get_node(circuit)
+	if CNode:
+		CNode.connect("TurnedOn",self,"c_open")
+		CNode.connect("TurnedOff",self,"c_close")
 	
 	pass # Replace with function body.
 
@@ -76,3 +83,10 @@ func b_open(name):
 	
 func b_close(name):
 	Toggle(false)
+	
+func c_open(index):
+	if index == CircuitOut:
+		Toggle(true)
+func c_close(index): 
+	if index == CircuitOut:
+		Toggle(false)

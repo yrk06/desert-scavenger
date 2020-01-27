@@ -1,11 +1,11 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Door.gd" type="Script" id=1]
 [ext_resource path="res://Textures/fog.png" type="Texture" id=2]
 
 [sub_resource type="CubeMesh" id=1]
 
-[sub_resource type="ConvexPolygonShape" id=2]
+[sub_resource type="ConvexPolygonShape" id=11]
 points = PoolVector3Array( -1, 1, 1, 1, 1, -1, 1, 1, 1, -1, 1, -1, -1, -1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, -1, 1, 1, -1, -1, 1, 1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, 1, 1, 1, -1, -1, 1, -1, 1, 1, 1, -1, 1, 1, 1, -1, -1, -1, -1, -1, 1, -1, 1, -1, -1 )
 
 [sub_resource type="Shader" id=3]
@@ -81,29 +81,21 @@ shader_param/uv2_scale = Vector3( 1, 1, 1 )
 shader_param/uv2_offset = Vector3( 0, 0, 0 )
 shader_param/texture_albedo = ExtResource( 2 )
 
-[sub_resource type="Gradient" id=5]
-offsets = PoolRealArray( 0, 0.987805, 1 )
-colors = PoolColorArray( 1, 1, 1, 1, 1, 1, 1, 0.256098, 1, 1, 1, 0 )
-
-[sub_resource type="GradientTexture" id=6]
-gradient = SubResource( 5 )
-
 [sub_resource type="Curve" id=7]
 bake_resolution = 1000
-_data = [ Vector2( 0, 1 ), 0.0, 0.079952, 0, 0, Vector2( 1, 0 ), -0.0218263, 0.0, 0, 0 ]
+_data = [ Vector2( 0, 0.1942 ), 0.0, 0.079952, 0, 0, Vector2( 1, 1 ), -0.0218263, 0.0, 0, 0 ]
 
 [sub_resource type="CurveTexture" id=8]
 curve = SubResource( 7 )
 
 [sub_resource type="ParticlesMaterial" id=9]
-spread = 90.0
-gravity = Vector3( 0, 0, 0 )
+gravity = Vector3( 0, -0.1, 0 )
 initial_velocity = 1.0
 initial_velocity_random = 1.0
 angular_velocity = 1.0
 angle_random = 1.0
 scale_curve = SubResource( 8 )
-color_ramp = SubResource( 6 )
+color = Color( 1, 0.0627451, 0.0627451, 1 )
 
 [sub_resource type="CubeMesh" id=10]
 size = Vector3( 5, 5, 0 )
@@ -120,7 +112,7 @@ material/0 = null
 [node name="StaticBody" type="StaticBody" parent="Mesh"]
 
 [node name="CollisionShape" type="CollisionShape" parent="Mesh/StaticBody"]
-shape = SubResource( 2 )
+shape = SubResource( 11 )
 
 [node name="Particles" type="Particles" parent="."]
 material_override = SubResource( 4 )
