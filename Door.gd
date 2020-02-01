@@ -91,7 +91,7 @@ func b_open(name):
 func b_close(name):
 	Toggle(false)
 	
-func c_open(index):
+func c_open():
 	Toggle(true)
-func c_close(index): 
+func c_close(): 
 	Toggle(false)
