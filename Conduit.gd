@@ -226,7 +226,7 @@ func TurnOn(Who):
 						print(str(c) + " will be called " + self.name)
 						#print(Bagulho)
 						Bagulho.TurnOn(self)
-		emit_signal("TurnedOn",self)
+		emit_signal("TurnedOn")
 		IsOn = true
 	pass
 func TurnOff(Who):
@@ -247,7 +247,7 @@ func TurnOff(Who):
 						print(c)
 						print(Bagulho)
 						Bagulho.TurnOff(self)
-			emit_signal("TurnedOff",self)
+			emit_signal("TurnedOff")
 			IsOn = false
 			
 		pass

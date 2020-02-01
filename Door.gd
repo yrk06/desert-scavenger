@@ -15,7 +15,6 @@ var animation = "idle"
 export (NodePath) var ButtonName
 
 export (NodePath) var circuit
-export var CircuitOut = 1
 
 func set_particle_pos(value):
 	if $Particles:
@@ -85,8 +84,6 @@ func b_close(name):
 	Toggle(false)
 	
 func c_open(index):
-	if index == CircuitOut:
-		Toggle(true)
+	Toggle(true)
 func c_close(index): 
-	if index == CircuitOut:
-		Toggle(false)
+	Toggle(false)
