@@ -6,6 +6,8 @@ extends Spatial
 # var b = "text"
 export (Mesh) var MeshType setget set_mesh
 export (float) var timeToOpen = 1.0
+export (int) var threshold = 1
+var currentInput = 0
 var isOpening = false
 export var isOpen = false setget Toggle
 export var WhereTo = Vector3()
@@ -17,7 +19,7 @@ var Speed = 1
 var animation = "idle"
 export (NodePath) var ButtonName
 
-export (NodePath) var circuit
+export (Array, NodePath) var circuit
 
 
 func set_particle_pos(value):
@@ -37,10 +39,12 @@ func _ready():
 	if NodeButton:
 		NodeButton.connect("Pressed",self,"b_open")
 		NodeButton.connect("Unpressed",self,"b_close")
-	var CNode = get_node(circuit)
-	if CNode:
-		CNode.connect("TurnedOn",self,"c_open")
-		CNode.connect("TurnedOff",self,"c_close")
+	print(circuit)
+	for c in circuit:
+		var CNode = get_node(c)
+		if CNode:
+			CNode.connect("TurnedOn",self,"c_open")
+			CNode.connect("TurnedOff",self,"c_close")
 	
 	pass # Replace with function body.
 
@@ -86,12 +90,21 @@ func Close(delta):
 		animation = "idle"
 		
 func b_open(name):
-	Toggle(true)
+	currentInput +=1
+	if currentInput >= threshold:
+		Toggle(true)
 	
 func b_close(name):
-	Toggle(false)
+	currentInput -=1
+	if currentInput < threshold:
+		Toggle(false)
 	
 func c_open():
-	Toggle(true)
+	currentInput +=1
+	if currentInput >= threshold:
+		Toggle(true)
+	
 func c_close(): 
-	Toggle(false)
+	currentInput -=1
+	if currentInput < threshold:
+		Toggle(false)

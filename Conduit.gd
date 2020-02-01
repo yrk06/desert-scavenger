@@ -163,6 +163,7 @@ func set_mesh(value):
 	MeshType = value
 	if $Mesh:
 		$Mesh.mesh = value
+		$Mesh/StaticBody/CollisionShape.shape = value.create_trimesh_shape()
 	pass
 # Called when the node enters the scene tree for the first time.
 func _ready():
