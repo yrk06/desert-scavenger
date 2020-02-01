@@ -1,0 +1,8 @@
+[gd_resource type="SpatialMaterial" load_steps=2 format=2]
+
+[ext_resource path="res://Environment/Desert/polydesert_atlas.png" type="Texture" id=1]
+
+[resource]
+resource_name = "polydesert_atlas"
+albedo_color = Color( 0.64, 0.64, 0.64, 1 )
+albedo_texture = ExtResource( 1 )
