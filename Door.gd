@@ -9,10 +9,16 @@ export (float) var timeToOpen = 1.0
 var isOpening = false
 export var isOpen = false setget Toggle
 export var WhereTo = Vector3()
+export (Array,int) var FacesToChange
+export (Material) var OpenMat
+export (Material) var CloseMat
 export var ParticlePosition = Vector3() setget set_particle_pos
 var Speed = 1
 var animation = "idle"
 export (NodePath) var ButtonName
+
+export (NodePath) var circuit
+
 
 func set_particle_pos(value):
 	if $Particles:
@@ -31,6 +37,10 @@ func _ready():
 	if NodeButton:
 		NodeButton.connect("Pressed",self,"b_open")
 		NodeButton.connect("Unpressed",self,"b_close")
+	var CNode = get_node(circuit)
+	if CNode:
+		CNode.connect("TurnedOn",self,"c_open")
+		CNode.connect("TurnedOff",self,"c_close")
 	
 	pass # Replace with function body.
 
@@ -47,8 +57,12 @@ func Toggle(value):
 	isOpen = value
 	$Particles.emitting = true
 	if isOpen:
+		for i in FacesToChange:
+			$Mesh.set_surface_material(i,OpenMat)
 		animation = "open"
 	else:
+		for i in FacesToChange:
+			$Mesh.set_surface_material(i,CloseMat)
 		animation = "close"
 	
 func Open(delta):
@@ -75,4 +89,9 @@ func b_open(name):
 	Toggle(true)
 	
 func b_close(name):
+	Toggle(false)
+	
+func c_open():
+	Toggle(true)
+func c_close(): 
 	Toggle(false)

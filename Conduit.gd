@@ -1,6 +1,10 @@
 tool
 extends Spatial
 
+
+signal TurnedOn
+signal TurnedOff
+
 ## This Enum is used to know which type of conector it is (in case Rotation is turned on)
 enum RT {CORNER,END,STRAIGHT,TJOINT}
 
@@ -133,6 +137,7 @@ func ApplyRotation(offset):
 #			TurnOff(c)
 	animation = "rotate"
 	set_animation_angle(-PI*offset/2)
+	print(ActiveConection)
 		
 		
 	
@@ -145,6 +150,7 @@ func set_generator(value):
 		set_active_conduits()
 	else:
 		ApplyRotation(0)
+	
 	if Generator:
 		TurnOn(self)
 		IsOn = true
@@ -167,6 +173,7 @@ func _ready():
 	if !ShouldRotate:
 		set_active_conduits()
 	else:
+		print(ActiveConection)
 		ApplyRotation(0)
 	if Generator:
 		TurnOn(self)
@@ -219,7 +226,8 @@ func TurnOn(Who):
 						print(str(c) + " will be called " + self.name)
 						#print(Bagulho)
 						Bagulho.TurnOn(self)
-	IsOn = true
+		emit_signal("TurnedOn")
+		IsOn = true
 	pass
 func TurnOff(Who):
 	if !Generator:
@@ -232,12 +240,14 @@ func TurnOff(Who):
 		if len(WhoIsOn) == 0:
 			for i in facesToChange:
 				$Mesh.set_surface_material(i,OffMat)
-			for c in ActiveConection:
-				var Bagulho = get_node(c)
-				if Bagulho != Who:
-					print(c)
-					print(Bagulho)
-					Bagulho.TurnOff(self)
+			if len(ActiveConection) != 0:
+				for c in ActiveConection:
+					var Bagulho = get_node(c)
+					if Bagulho != Who:
+						print(c)
+						print(Bagulho)
+						Bagulho.TurnOff(self)
+			emit_signal("TurnedOff")
 			IsOn = false
 			
 		pass

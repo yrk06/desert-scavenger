@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Door.tscn" type="PackedScene" id=1]
+[ext_resource path="res://TempleAssets/Conduit.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Button.tscn" type="PackedScene" id=3]
+
+[sub_resource type="SpatialMaterial" id=1]
+resource_local_to_scene = true
+resource_name = "Green_Stone_-_Dark"
+albedo_color = Color( 0.176471, 0.384314, 0.337255, 1 )
+metallic = 1.0
+emission_enabled = true
+emission = Color( 0.105882, 0.854902, 0.686275, 1 )
+emission_energy = 1.0
+emission_operator = 0
+emission_on_uv2 = false
+
+[sub_resource type="SpatialMaterial" id=2]
+resource_local_to_scene = true
+resource_name = "Green_Stone_-_Dark"
+albedo_color = Color( 0.1765, 0.3843, 0.3373, 1 )
+metallic = 1.0
+
+[node name="Spatial" type="Spatial"]
+
+[node name="Door" parent="." instance=ExtResource( 1 )]
+OpenMat = SubResource( 1 )
+CloseMat = SubResource( 2 )
+circuit = NodePath("Conduit")
+
+[node name="Conduit" parent="Door" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.24405, 0, 0 )
+Button = NodePath("Button")
+
+[node name="Button" parent="Door/Conduit" instance=ExtResource( 3 )]
+TwoState = true
