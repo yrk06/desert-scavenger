@@ -26,7 +26,7 @@ metallic = 1.0
 [node name="Door" parent="." instance=ExtResource( 1 )]
 OpenMat = SubResource( 1 )
 CloseMat = SubResource( 2 )
-circuit = NodePath("Conduit")
+circuit = [ NodePath("Conduit") ]
 
 [node name="Conduit" parent="Door" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.24405, 0, 0 )
