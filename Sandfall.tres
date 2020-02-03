@@ -1,0 +1,73 @@
+[gd_resource type="ShaderMaterial" load_steps=10 format=2]
+
+[sub_resource type="Shader" id=1]
+code = "shader_type spatial;
+
+uniform vec3 speed;
+uniform vec4 Color : hint_color;
+uniform sampler2D Noise1;
+uniform sampler2D Noise2;
+uniform vec4 StoneColor : hint_color;
+uniform vec2 StoneScale;
+uniform sampler2D Stones;
+uniform sampler2D StoneNormal;
+uniform float StoneBias = 0.7;
+uniform vec2 Scale1;
+uniform vec2 Scale2;
+
+
+void fragment()
+{
+	vec2 coord1 = UV * Scale1;
+	coord1.y += TIME * speed.x;
+	vec2 coord2 = UV * Scale2;
+	coord2.y += TIME * speed.y;
+	vec3 sand = clamp(texture(Noise1,coord1)+texture(Noise2,coord2),0.0,1.0).rgb * Color.rgb;
+	ALBEDO = sand;
+	vec2 stoneUV = UV * StoneScale;
+	stoneUV.y += TIME * speed.z;
+	if (texture(Stones,stoneUV).r > StoneBias)
+	{
+		ALBEDO = texture(Stones,stoneUV).r * StoneColor.rgb;
+		NORMALMAP = texture(StoneNormal,stoneUV).rgb*10.0;
+	}
+	
+}"
+
+[sub_resource type="OpenSimplexNoise" id=2]
+
+[sub_resource type="NoiseTexture" id=3]
+seamless = true
+noise = SubResource( 2 )
+
+[sub_resource type="OpenSimplexNoise" id=4]
+
+[sub_resource type="NoiseTexture" id=5]
+seamless = true
+noise = SubResource( 4 )
+
+[sub_resource type="OpenSimplexNoise" id=6]
+
+[sub_resource type="NoiseTexture" id=7]
+seamless = true
+as_normalmap = true
+noise = SubResource( 6 )
+
+[sub_resource type="OpenSimplexNoise" id=8]
+
+[sub_resource type="NoiseTexture" id=9]
+noise = SubResource( 8 )
+
+[resource]
+shader = SubResource( 1 )
+shader_param/speed = Vector3( 1, 2, 1 )
+shader_param/Color = Color( 0.94902, 0.717647, 0.419608, 1 )
+shader_param/StoneColor = Color( 0.443137, 0.247059, 0.0901961, 1 )
+shader_param/StoneScale = Vector2( 1, 1 )
+shader_param/StoneBias = 0.75
+shader_param/Scale1 = Vector2( 5, 1 )
+shader_param/Scale2 = Vector2( 10, 2 )
+shader_param/Noise1 = SubResource( 3 )
+shader_param/Noise2 = SubResource( 5 )
+shader_param/Stones = SubResource( 9 )
+shader_param/StoneNormal = SubResource( 7 )
