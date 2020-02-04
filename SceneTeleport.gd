@@ -7,7 +7,10 @@ extends Spatial
 export (Vector3) var WhereTo
 export (Vector3) var LookAt
 export var SameScene = true;
-export (PackedScene) var Scene;
+export (PackedScene) var SceneToLoad;
+export var SceneName = "Default"
+export (Vector3) var WhereToLoad
+export (NodePath) var NodeToFree
 export (float) var FadeTimes = 1
 var RotBasis
 var player
@@ -34,13 +37,22 @@ func _on_Area_body_entered(body):
 		player = body
 		player.isInControl = false
 		$Control/AnimationPlayer.play("FadeOut",-1,FadeSpeed)
+		
 	pass # Replace with function body.
 
 
 func _on_AnimationPlayer_animation_finished(anim_name):
 	if anim_name == "FadeOut":
+		if SceneToLoad:
+			var scene = SceneToLoad.instance();
+			scene.translation = WhereToLoad
+			scene.name = SceneName
+			get_tree().get_root().add_child(scene)
 		Teleport()
 		$Control/AnimationPlayer.play("FadeIn",-1,FadeSpeed)
+	if anim_name == "FadeIn":
+		if NodeToFree:
+			get_node(NodeToFree).queue_free()
 	pass # Replace with function body.
 
 
