@@ -25,6 +25,11 @@ func _ready():
 	LookAt = - LookAt
 	FadeSpeed = 1.0/FadeTimes
 	print(FadeSpeed)
+	RotBasis = Basis()
+	var angle = RotBasis.z.angle_to(LookAt)
+	if LookAt.x < 0:
+		angle = -angle
+	RotBasis = RotBasis.rotated(Vector3.UP,angle)
 	pass # Replace with function body.
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -60,9 +65,12 @@ func Teleport():
 	print("Opa")
 	player.translation = WhereTo
 	var angle = player.transform.basis.z.angle_to(LookAt)
+	print("------------")
+	print(LookAt)
 	print(player.transform.basis.z)
 	if player.transform.basis.z.x < 0:
 		angle = -angle
 	print(angle)
-	player.transform.basis = player.transform.basis.rotated(Vector3.UP,angle)
+	player.transform.basis = RotBasis#player.transform.basis.rotated(Vector3.UP,angle)
+	print(player.transform.basis.z)
 	player.isInControl = true

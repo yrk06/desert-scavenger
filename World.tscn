@@ -648,9 +648,9 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -22.9649, 0.429269, 29.7552 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16.5642, 4.76837e-007, 28.5574 )
 
 [node name="SceneTeleport" parent="AreaOne" instance=ExtResource( 33 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0, 13 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0.589588, 13 )
 WhereTo = Vector3( 0, 12, 0 )
-LookAt = Vector3( 0, 0, 1 )
+LookAt = Vector3( 0, 0, -1 )
 SceneToLoad = ExtResource( 34 )
 WhereToLoad = Vector3( 0, 10, 0 )
 FadeTimes = 2.0
@@ -661,10 +661,6 @@ script = ExtResource( 35 )
 __meta__ = {
 "_editor_icon": ExtResource( 36 )
 }
-collision_enabled = true
-ambient_wind = 0.0
-lod_scale = 2.0
-map_scale = Vector3( 1, 1, 1 )
 _terrain_data = ExtResource( 37 )
 chunk_size = 32
 shader_type = "Custom"
