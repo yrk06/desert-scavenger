@@ -7,3 +7,11 @@ ground_curve = 0.0282843
 [resource]
 background_mode = 2
 background_sky = SubResource( 1 )
+fog_color = Color( 0.470588, 0.454902, 0.376471, 1 )
+fog_depth_begin = 0.0
+fog_depth_end = 20.0
+fog_depth_curve = 4.43828
+fog_transmit_enabled = true
+fog_transmit_curve = 0.34151
+ss_reflections_enabled = true
+ss_reflections_fade_in = 1.0

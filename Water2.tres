@@ -6,11 +6,13 @@ render_mode specular_toon;
 
 uniform sampler2D Noise;
 uniform float scale = 1.0;
+uniform vec2 size = vec2(1.0,1.0);
 uniform float globalScale = 0.7;
 uniform bool useTide = false;
 uniform bool useTideColorChange = false;
 uniform float TidePeriod = 0.4;
 uniform float TideHeight = 2.5;
+uniform float proximity_fade_distance = 1.0;
 varying vec3 v_vertex;
 
 float wave(float num)
@@ -31,12 +33,12 @@ float tideAlb(float time)
 }
 float height(vec2 Position, float time)
 {
-	float y = 0.1*wave(Position.x+time*0.69);
-	y += 0.2*wave(Position.y+time*0.42);
-	y += 0.3*wave(Position.x-time*2.9);
-	y += 0.4*wave(Position.y-time*2.63);
-	//y += texture(Noise,(Position*scale)).r;
-	return (y * globalScale)+tide(time)+texture(Noise,(Position*scale)).r;
+	float y = 0.1*wave((Position.x+time)*2.0*3.1415/size.x * 6.5);
+	y += 0.2*wave((Position.y+time)*2.0*3.1415/size.y * 7.5);
+	y += 0.3*wave((Position.x-time)*2.0*3.1415/size.x *8.5);
+	y += 0.4*wave((Position.y-time)*2.0*3.1415/size.y *9.0);
+	y += texture(Noise,(Position*scale)+vec2(time/50.0,time/50.0)).r;
+	return (y * globalScale)+tide(time);+texture(Noise,(Position*scale)).r;
 	
 }
 void vertex()
@@ -61,7 +63,10 @@ void fragment()
 	{
 		ALBEDO += vec3(1.0,1.0,1.0);
 	}*/
-	
+	float depth_tex = textureLod(DEPTH_TEXTURE,SCREEN_UV,0.0).r;
+	vec4 world_pos = INV_PROJECTION_MATRIX * vec4(SCREEN_UV*2.0-1.0,depth_tex*2.0-1.0,1.0);
+	world_pos.xyz/=world_pos.w;
+	ALPHA*=clamp(1.0-smoothstep(world_pos.z+proximity_fade_distance,world_pos.z,VERTEX.z),0.0,1.0);
 	
 	
 }"
@@ -77,9 +82,11 @@ noise = SubResource( 2 )
 [resource]
 shader = SubResource( 1 )
 shader_param/scale = 10.0
-shader_param/globalScale = 0.3
+shader_param/size = Vector2( 170, 110 )
+shader_param/globalScale = 0.7
 shader_param/useTide = false
 shader_param/useTideColorChange = false
 shader_param/TidePeriod = 30.0
 shader_param/TideHeight = 0.8
+shader_param/proximity_fade_distance = 1.0
 shader_param/Noise = SubResource( 3 )
