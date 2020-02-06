@@ -1,0 +1,58 @@
+[gd_resource type="ShaderMaterial" load_steps=4 format=2]
+
+[ext_resource path="res://Textures/TexturesCom_CelticSet01_02_512_3dbrush.png" type="Texture" id=1]
+[ext_resource path="res://Textures/NormalMap.png" type="Texture" id=2]
+
+[sub_resource type="Shader" id=2]
+code = "shader_type spatial;
+
+uniform sampler2D Rune;
+uniform sampler2D RuneNormal;
+uniform vec4 S_Color : hint_color;
+uniform vec4 R_Color : hint_color;
+uniform float R_sand;
+uniform float R_rune;
+uniform float M_sand;
+uniform float M_rune;
+uniform float DisplaceDist = 5.0;
+uniform float DisplaceAmount = 0.01;
+uniform vec2 RuneScale = vec2(1.0);
+uniform vec2 dissolveScale = vec2(1.0);
+
+void vertex()
+{
+	float z_dist = clamp((MODELVIEW_MATRIX * vec4(VERTEX, 1.0)).z * -1.0,0.0,DisplaceDist);
+	if(z_dist < DisplaceDist ) //&& NORMAL.y == 0.0)
+	{
+		VERTEX += NORMAL * DisplaceAmount * texture(Rune,UV*RuneScale).r;
+	}
+		
+		
+}
+
+void fragment()
+{
+	float R = texture(Rune,UV*RuneScale).r;
+	vec3 Nmap = texture(RuneNormal,UV*RuneScale).rgb;
+	METALLIC = mix(M_sand,M_rune,R);
+	ROUGHNESS = mix(R_sand,R_rune,R);
+	ALBEDO = mix(S_Color,R_Color,R).rgb;
+	NORMALMAP = Nmap;
+	
+	
+}"
+
+[resource]
+shader = SubResource( 2 )
+shader_param/S_Color = Color( 0.835294, 0.694118, 0.545098, 1 )
+shader_param/R_Color = Color( 1, 1, 1, 1 )
+shader_param/R_sand = 1.0
+shader_param/R_rune = 0.5
+shader_param/M_sand = null
+shader_param/M_rune = 1.0
+shader_param/DisplaceDist = 5.0
+shader_param/DisplaceAmount = 0.01
+shader_param/RuneScale = Vector2( 3, 2 )
+shader_param/dissolveScale = Vector2( 10.4, 9.54 )
+shader_param/Rune = ExtResource( 1 )
+shader_param/RuneNormal = ExtResource( 2 )
