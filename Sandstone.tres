@@ -1,0 +1,43 @@
+[gd_resource type="ShaderMaterial" load_steps=6 format=2]
+
+[ext_resource path="res://Textures/TexturesCom_Rock_CliffDesert4_1K_albedo.png" type="Texture" id=1]
+[ext_resource path="res://Textures/TexturesCom_Rock_CliffDesert4_1K_height.png" type="Texture" id=2]
+[ext_resource path="res://Textures/TexturesCom_Rock_CliffDesert4_1K_normal.png" type="Texture" id=3]
+[ext_resource path="res://Textures/TexturesCom_Rock_CliffDesert4_1K_roughness.png" type="Texture" id=4]
+
+[sub_resource type="Shader" id=1]
+code = "shader_type spatial;
+
+uniform sampler2D alb;
+uniform sampler2D norm;
+uniform sampler2D height;
+uniform sampler2D rough;
+uniform float disp = 0.01;
+uniform float dispDist = 5.0;
+uniform float scale = 1.0;
+void vertex()
+{
+	float z_dist = clamp((MODELVIEW_MATRIX * vec4(VERTEX, 1.0)).z * -1.0,0.0,dispDist);
+	if(dispDist > z_dist)
+	{
+		VERTEX += NORMAL * texture(height,UV*scale).rgb * disp;
+	}
+}
+
+void fragment()
+{
+	ALBEDO = texture(alb,UV*scale).rgb;
+	NORMAL = texture(norm,UV*scale).rgb;
+	ROUGHNESS = texture(rough,UV*scale).r;
+
+}"
+
+[resource]
+shader = SubResource( 1 )
+shader_param/disp = 0.01
+shader_param/dispDist = 5.0
+shader_param/scale = 1.0
+shader_param/alb = ExtResource( 1 )
+shader_param/norm = ExtResource( 3 )
+shader_param/height = ExtResource( 2 )
+shader_param/rough = ExtResource( 4 )
