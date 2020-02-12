@@ -5,6 +5,9 @@ extends Spatial
 # var a = 2
 # var b = "text"
 export (Mesh) var MeshType setget set_mesh
+export (bool) var UsePackedScene = false setget set_uPS
+export (PackedScene) var PS_MeshType setget set_PS_mesh
+var PS
 export (float) var timeToOpen = 1.0
 export (int) var threshold = 1
 var currentInput = 0
@@ -27,12 +30,36 @@ func set_particle_pos(value):
 		ParticlePosition = value
 		$Particles.translation = value
 
+func set_uPS(value):
+	UsePackedScene = value
+	if UsePackedScene:
+		set_mesh(null)
+	else:
+		set_PS_mesh(null)
 func set_mesh(value):
-	MeshType = value
-	if $Mesh:
-		$Mesh.mesh = value
-		$Mesh/StaticBody/CollisionShape.shape = value.create_convex_shape()
+	if !UsePackedScene or value == null:
+		MeshType = value
+		if $Mesh:
+			$Mesh.mesh = value
+			if value != null:
+				$Mesh/StaticBody/CollisionShape.shape = value.create_convex_shape()
+			else:
+				$Mesh/StaticBody/CollisionShape.shape = null
+			
 	pass
+	
+func set_PS_mesh(value):
+	if UsePackedScene or value == null:
+		PS_MeshType = value
+		if PS:
+			PS.queue_free()
+		if PS_MeshType != null:
+			PS = PS_MeshType.instance()
+			add_child(PS)
+			PS.set_owner(self)
+			PS.name = "PS_Mesh"
+		else:
+			PS = null
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	var NodeButton = get_node(ButtonName)
@@ -61,30 +88,48 @@ func Toggle(value):
 	isOpen = value
 	$Particles.emitting = true
 	if isOpen:
-		for i in FacesToChange:
-			$Mesh.set_surface_material(i,OpenMat)
+		if UsePackedScene:
+			if PS.has_method("ChangeMat"):
+				PS.TurnOnMat(OpenMat);
+		else:
+			for i in FacesToChange:
+				$Mesh.set_surface_material(i,OpenMat)
 		animation = "open"
 	else:
-		for i in FacesToChange:
-			$Mesh.set_surface_material(i,CloseMat)
+		if UsePackedScene:
+			if PS.has_method("ChangeMat"):
+				PS.TurnOnMat(CloseMat);
+		else:
+			for i in FacesToChange:
+				$Mesh.set_surface_material(i,CloseMat)
 		animation = "close"
 	
 func Open(delta):
-	if $Mesh.translation != WhereTo:
-		if (WhereTo - $Mesh.translation).length() < Speed*delta:
-			$Mesh.translation = WhereTo
+	var Objeto
+	if UsePackedScene:
+		Objeto = PS
+	else:
+		Objeto = $Mesh
+	if Objeto.translation != WhereTo:
+		if (WhereTo - Objeto.translation).length() < Speed*delta:
+			Objeto.translation = WhereTo
 		else:
-			$Mesh.translate_object_local(WhereTo.normalized()*Speed*delta)
+			Objeto.translate_object_local(WhereTo.normalized()*Speed*delta)
 	else:
 		$Particles.emitting = false
 		animation = "idle"
 	
 func Close(delta):
-	if $Mesh.translation != Vector3(0,0,0):
-		if (-$Mesh.translation ).length() < Speed*delta:
-			$Mesh.translation = Vector3(0,0,0)
+	var Objeto
+	if UsePackedScene:
+		Objeto = PS
+	else:
+		Objeto = $Mesh
+	if Objeto.translation != Vector3(0,0,0):
+		if (-Objeto.translation ).length() < Speed*delta:
+			Objeto.translation = Vector3(0,0,0)
 		else:
-			$Mesh.translate_object_local(-$Mesh.translation.normalized()*Speed*delta)
+			Objeto.translate_object_local(-Objeto.translation.normalized()*Speed*delta)
 	else:
 		$Particles.emitting = false
 		animation = "idle"
