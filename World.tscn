@@ -133,7 +133,7 @@ varying vec3 v_pos;
 float height(vec2 coord, float time)
 {
 	float y = texture(Noise1,coord*Scale1+Speed1*time).r;
-	y += texture(Noise2,coord*Scale2+Speed2*time).r;
+	y *= texture(Noise2,coord*Scale2+Speed2*time).r;
 	return y * displace_scale/2.0;
 	
 }
@@ -155,9 +155,9 @@ void fragment()
 	float fresnel = sqrt(1.0 - dot(NORMAL, VIEW));
 	ROUGHNESS = 0.01 * (1.0 - fresnel);
 	METALLIC = 0.0;
-	RIM = 0.2;
+	RIM = 0.02;
 	float foam = clamp(smoothstep(pixel_position.z+1.0,pixel_position.z,VERTEX.z),0.0,1.0);
-	ALBEDO = W_Color.rgb + (0.1 * fresnel);
+	ALBEDO = W_Color.rgb+ (0.1 * fresnel);
 	if(foam > FoamBias)
 	{
 		float f = (foam - FoamBias)/(1.0-FoamBias);
@@ -197,12 +197,12 @@ noise = SubResource( 16 )
 
 [sub_resource type="ShaderMaterial" id=18]
 shader = SubResource( 11 )
-shader_param/W_Color = Color( 0.113725, 0.211765, 0.427451, 1 )
-shader_param/displace_scale = 0.1
+shader_param/W_Color = Color( 0.454902, 0.611765, 0.960784, 1 )
+shader_param/displace_scale = 0.3
 shader_param/Speed1 = Vector2( 0.1, 0.1 )
-shader_param/Speed2 = Vector2( 0, 0 )
+shader_param/Speed2 = Vector2( -0.1, -0.1 )
 shader_param/Scale1 = Vector2( 5, 5 )
-shader_param/Scale2 = Vector2( 10, 10 )
+shader_param/Scale2 = Vector2( 5, 5 )
 shader_param/FoamNoiseScale = Vector2( 0.1, 0.1 )
 shader_param/FoamNoiseSpeed = Vector2( 0, 0.2 )
 shader_param/FoamBias = 0.01
@@ -443,14 +443,22 @@ void fragment() {
 	//float bias = 0.7*sin(TIME/4.0) + 0.71;
 	//NORMAL = normalize(cross(dFdx(VERTEX), dFdy(VERTEX)));
 	//ALBEDO = SandAlbedo.rgb;
-	ALBEDO = texture(Sand_A,UV*texturescales).rgb;
+	vec3 Colorone = vec3(0.7,0.5,0.3)*0.5;
+	float y = texture(B_Noise,v_vertex.xz*b_scale).r;
+	if (y >= b_rockBias)
+	{
+			Colorone = vec3(0.07,0.05,0.03)*y;
+	}
+	vec4 MyColor = texture(u_terrain_colormap,UV);
+	ALBEDO = mix(texture(Sand_A,UV*texturescales).rgb,Colorone,MyColor.g);
 	NORMALMAP = texture(Sand_N,UV*texturescales).rgb;
-	ROUGHNESS = texture(Sand_R,UV*texturescales).r;
+	ROUGHNESS = mix(texture(Sand_R,UV*texturescales).r,0.01,MyColor.g);
+	
 	if (v_normal.x >= bias || v_normal.z >= bias || v_normal.x <= -bias || v_normal.z <= -bias)
 	{
 		ALBEDO = vec3(0.07,0.05,0.03);
-		ALBEDO = texture(Stone_A,UV*texturescales*0.25).rgb * 0.1;
-		NORMALMAP = texture(Sand_N,UV*texturescales*0.25).rgb;
+		//ALBEDO = texture(Stone_A,UV*texturescales*0.25).rgb * 0.1;
+		NORMALMAP = texture(Stone_N,UV*texturescales*0.05).rgb;
 		ROUGHNESS = 1.0;//texture(Sand_R,UV*texturescales).r;
 	}
 	if(v_vertex.y <= -bottomlessBias && !(v_normal.x >= bias || v_normal.z >= bias || v_normal.x <= -bias || v_normal.z <= -bias))
@@ -461,12 +469,13 @@ void fragment() {
 	else if(v_vertex.y <= WaterLevel+WaterBias && !(v_normal.x >= bias || v_normal.z >= bias || v_normal.x <= -bias || v_normal.z <= -bias))
 	{
 		ALBEDO = vec3(0.7,0.5,0.3)*0.5;
-		float y = texture(B_Noise,v_vertex.xz*b_scale).r;
+		y = texture(B_Noise,v_vertex.xz*b_scale).r;
 		if (y >= b_rockBias)
 		{
 			ALBEDO = vec3(0.07,0.05,0.03)*y;
 			NORMALMAP = texture(B_Noise_normal,v_vertex.xz*b_scale).rgb;	
 		}
+		ROUGHNESS = 0.01;
 	}
 	if(v_vertex.y >= s_bias-s_transitionBias)
 	{
@@ -513,6 +522,7 @@ noise = SubResource( 34 )
 [node name="Spatial" type="Spatial"]
 
 [node name="AreaOne" type="Spatial" parent="."]
+editor/display_folded = true
 
 [node name="Ground" type="MeshInstance" parent="AreaOne"]
 editor/display_folded = true
@@ -840,8 +850,11 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16.5642, 4.76837e-007, 28.557
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0.589588, 13 )
 WhereTo = Vector3( 0, 12, 0 )
 LookAt = Vector3( 0, 0, 1 )
+SameScene = true
 SceneToLoad = ExtResource( 35 )
+SceneName = "Default"
 WhereToLoad = Vector3( 0, 10, 0 )
+NodeToFree = NodePath("")
 FadeTimes = 2.0
 
 [node name="HTerrain" type="Spatial" parent="."]
@@ -890,4 +903,4 @@ ground/albedo_bump_3 = null
 ground/normal_roughness_3 = null
 
 [node name="Spatial" parent="." instance=ExtResource( 44 )]
-transform = Transform( 0.906055, 0, -0.42316, 0, 1, 0, 0.42316, 0, 0.906055, 0.797143, -0.359126, -19.3697 )
+transform = Transform( 0.93939, 0, -0.342851, 0, 1, 0, 0.342851, 0, 0.93939, 3.7945, 0.571048, -23.1535 )

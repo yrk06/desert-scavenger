@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Floor_Border.obj-9c7002da53c1fcc64eefab665452898b.mesh"
+
+[deps]
+
+files=[ "res://.import/Floor_Border.obj-9c7002da53c1fcc64eefab665452898b.mesh" ]
+
+source_file="res://TempleAssets/MyAssets/Floor_Border.obj"
+dest_files=[ "res://.import/Floor_Border.obj-9c7002da53c1fcc64eefab665452898b.mesh", "res://.import/Floor_Border.obj-9c7002da53c1fcc64eefab665452898b.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

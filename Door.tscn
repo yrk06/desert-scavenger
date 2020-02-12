@@ -7,11 +7,12 @@
 
 [sub_resource type="CubeMesh" id=1]
 
-[sub_resource type="ConvexPolygonShape" id=9]
+[sub_resource type="ConvexPolygonShape" id=2]
 points = PoolVector3Array( -1, 1, 1, 1, 1, -1, 1, 1, 1, -1, 1, -1, -1, -1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, -1, 1, 1, -1, -1, 1, 1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, 1, 1, 1, -1, -1, 1, -1, 1, 1, 1, -1, 1, 1, 1, -1, -1, -1, -1, -1, 1, -1, 1, -1, -1 )
 
 [sub_resource type="Shader" id=3]
 code = "shader_type spatial;
+render_mode unshaded;
 render_mode blend_mix,depth_draw_opaque,cull_back,diffuse_burley,specular_schlick_ggx;
 uniform vec4 albedo : hint_color;
 uniform sampler2D texture_albedo : hint_albedo;
@@ -116,7 +117,7 @@ material/0 = null
 [node name="StaticBody" type="StaticBody" parent="Mesh"]
 
 [node name="CollisionShape" type="CollisionShape" parent="Mesh/StaticBody"]
-shape = SubResource( 9 )
+shape = SubResource( 2 )
 
 [node name="Particles" type="Particles" parent="."]
 material_override = SubResource( 4 )

@@ -33,6 +33,14 @@ config/icon="res://icon.png"
 
 enabled=PoolStringArray( "zylann.hterrain" )
 
+[importer_defaults]
+
+wavefront_obj={
+"generate_tangents": true,
+"optimize_mesh": true,
+"scale_mesh": Vector3( 1, 1, 1 )
+}
+
 [input]
 
 walk_front={
