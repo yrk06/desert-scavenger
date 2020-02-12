@@ -5,9 +5,9 @@
 [ext_resource path="res://TempleAssets/Green_Stone_Default.tres" type="Material" id=3]
 [ext_resource path="res://Textures/fog.png" type="Texture" id=4]
 
-[sub_resource type="CubeMesh" id=1]
+[sub_resource type="CubeMesh" id=9]
 
-[sub_resource type="ConvexPolygonShape" id=2]
+[sub_resource type="ConvexPolygonShape" id=10]
 points = PoolVector3Array( -1, 1, 1, 1, 1, -1, 1, 1, 1, -1, 1, -1, -1, -1, 1, 1, -1, -1, 1, -1, 1, -1, -1, -1, 1, 1, 1, -1, 1, -1, 1, 1, -1, -1, 1, 1, 1, -1, 1, -1, -1, -1, 1, -1, -1, -1, -1, 1, 1, 1, 1, -1, -1, 1, -1, 1, 1, 1, -1, 1, 1, 1, -1, -1, -1, -1, -1, 1, -1, 1, -1, -1 )
 
 [sub_resource type="Shader" id=3]
@@ -105,19 +105,19 @@ size = Vector3( 5, 5, 0 )
 
 [node name="Door" type="Spatial"]
 script = ExtResource( 1 )
-MeshType = SubResource( 1 )
-WhereTo = Vector3( 5, 0, 0 )
+MeshType = SubResource( 9 )
+WhereTo = Vector3( 0, 1.8, 0 )
 OpenMat = ExtResource( 2 )
 CloseMat = ExtResource( 3 )
 
 [node name="Mesh" type="MeshInstance" parent="."]
-mesh = SubResource( 1 )
+mesh = SubResource( 9 )
 material/0 = null
 
 [node name="StaticBody" type="StaticBody" parent="Mesh"]
 
 [node name="CollisionShape" type="CollisionShape" parent="Mesh/StaticBody"]
-shape = SubResource( 2 )
+shape = SubResource( 10 )
 
 [node name="Particles" type="Particles" parent="."]
 material_override = SubResource( 4 )
