@@ -89,16 +89,17 @@ func Toggle(value):
 	$Particles.emitting = true
 	if isOpen:
 		if UsePackedScene:
-			if PS.has_method("ChangeMat"):
-				PS.TurnOnMat(OpenMat);
+			if PS.has_method("CMat"):
+				PS.CMat(OpenMat);
 		else:
 			for i in FacesToChange:
 				$Mesh.set_surface_material(i,OpenMat)
 		animation = "open"
 	else:
 		if UsePackedScene:
-			if PS.has_method("ChangeMat"):
-				PS.TurnOnMat(CloseMat);
+			if PS.has_method("CMat"):
+				print("Has")
+				PS.CMat(CloseMat);
 		else:
 			for i in FacesToChange:
 				$Mesh.set_surface_material(i,CloseMat)
