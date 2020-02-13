@@ -10,6 +10,8 @@ enum RT {CORNER,END,STRAIGHT,TJOINT}
 
 ##Handle Conection
 export (Array, NodePath) var OtherConduits = [] setget set_OtherConduits
+export (bool) var autofill
+export (String) var SequenceName = "Conduit"
 export var WhoIsOn = []
 var ActiveConection
 export var Generator = false setget set_generator
@@ -26,7 +28,7 @@ export (NodePath) var RotateButton
 var animation = "idle"
 
 ##Visible aspects
-export var facesToChange = [0] ##Set per Mesh (Good luck)
+export (Array,int) var facesToChange = [0] ##Set per Mesh (Good luck)
 var OffMat = preload("res://TempleAssets/Green_Stone_Default.tres")
 var OnMat = preload("res://TempleAssets/Green_Stone_On.tres")
 export (Mesh) var MeshType setget set_mesh
@@ -38,6 +40,15 @@ var IsOn = false
 
 func set_OtherConduits(value):
 	OtherConduits = value
+	var MyNumber = int(name.split(SequenceName)[1])
+	print(MyNumber)
+	if autofill:
+		var Others = [ "../"+SequenceName + str(MyNumber-1),"../"+ SequenceName + str(MyNumber+1) ]
+		for c in range(len(OtherConduits)):
+			if c >= len(Others):
+				break
+			OtherConduits[c] = Others[c]
+	set_active_conduits()
 
 func set_CurrentRotation(value):
 	if ShouldRotate:
