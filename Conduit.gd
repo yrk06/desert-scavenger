@@ -63,6 +63,7 @@ func set_active_conduits():
 		for c in OtherConduits:
 			if c != "":
 				ActiveConection.append(c)
+		print("Active setted")
 
 ##This function is going to Aplly Rotaions when needed
 func ApplyRotation(offset):

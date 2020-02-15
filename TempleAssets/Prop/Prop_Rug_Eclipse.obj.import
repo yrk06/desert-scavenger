@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Prop_Rug_Eclipse.obj-8f15f591c22e22bfb6fc57d3a53239ae.mesh"
+
+[deps]
+
+files=[ "res://.import/Prop_Rug_Eclipse.obj-8f15f591c22e22bfb6fc57d3a53239ae.mesh" ]
+
+source_file="res://TempleAssets/Prop/Prop_Rug_Eclipse.obj"
+dest_files=[ "res://.import/Prop_Rug_Eclipse.obj-8f15f591c22e22bfb6fc57d3a53239ae.mesh", "res://.import/Prop_Rug_Eclipse.obj-8f15f591c22e22bfb6fc57d3a53239ae.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

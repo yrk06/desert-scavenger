@@ -1,40 +1,40 @@
-[gd_scene load_steps=80 format=2]
+[gd_scene load_steps=83 format=2]
 
 [ext_resource path="res://Textures/TexturesCom_SoilBeach0131_1_seamless_S.png" type="Texture" id=1]
 [ext_resource path="res://Textures/TexturesCom_SoilBeach0131_1_seamless_S_n.png" type="Texture" id=2]
-[ext_resource path="res://Player.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Button.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Ship.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Tower.tscn" type="PackedScene" id=6]
-[ext_resource path="res://House.tscn" type="PackedScene" id=7]
-[ext_resource path="res://DungeonEntrance.tscn" type="PackedScene" id=8]
-[ext_resource path="res://default_env.tres" type="Environment" id=9]
-[ext_resource path="res://Textures/DistantSandCloud.tscn" type="PackedScene" id=10]
-[ext_resource path="res://WallModel.tscn" type="PackedScene" id=11]
-[ext_resource path="res://WallModelWindow.tscn" type="PackedScene" id=12]
-[ext_resource path="res://TempleAssets/Walls/Wall_Ruined_Full_2.obj" type="ArrayMesh" id=13]
-[ext_resource path="res://TempleAssets/Walls/Wall_Ruined_Full_1.obj" type="ArrayMesh" id=14]
-[ext_resource path="res://TempleAssets/Walls/Wall_Ruined_Half_1.obj" type="ArrayMesh" id=15]
-[ext_resource path="res://TempleAssets/Walls/Wall_Ruined_Half_2.obj" type="ArrayMesh" id=16]
-[ext_resource path="res://MummySpawn.tscn" type="PackedScene" id=17]
-[ext_resource path="res://TempleAssets/Conduit.tscn" type="PackedScene" id=18]
-[ext_resource path="res://TempleAssets/Puzzle/Wall/Puzzle_Wall_Conduit_Path_Cross.obj" type="ArrayMesh" id=19]
-[ext_resource path="res://TempleAssets/Puzzle/Wall/Puzzle_Wall_Conduit_Path_Corner.obj" type="ArrayMesh" id=20]
-[ext_resource path="res://TempleAssets/Water.tscn" type="PackedScene" id=21]
-[ext_resource path="res://TempleAssets/Water.tres" type="Material" id=22]
-[ext_resource path="res://Environment/Desert/cactus02.obj" type="ArrayMesh" id=23]
-[ext_resource path="res://Environment/Desert/Polydesert_atlas.tres" type="Material" id=24]
-[ext_resource path="res://Environment/Desert/rock01.obj" type="ArrayMesh" id=25]
-[ext_resource path="res://Environment/Desert/rock07.obj" type="ArrayMesh" id=26]
-[ext_resource path="res://Environment/Desert/aloe.obj" type="ArrayMesh" id=27]
-[ext_resource path="res://Environment/Desert/cactus01.obj" type="ArrayMesh" id=28]
-[ext_resource path="res://Environment/Desert/cactus03.obj" type="ArrayMesh" id=29]
-[ext_resource path="res://Textures/TexturesCom_CelticSet01_02_512_3dbrush.png" type="Texture" id=30]
-[ext_resource path="res://Textures/NormalMap.png" type="Texture" id=31]
-[ext_resource path="res://TestCircuit.tscn" type="PackedScene" id=32]
-[ext_resource path="res://TestDoorThres.tscn" type="PackedScene" id=33]
-[ext_resource path="res://SceneTeleport.tscn" type="PackedScene" id=34]
-[ext_resource path="res://TestDungeon.tscn" type="PackedScene" id=35]
+[ext_resource path="res://Button.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Tower.tscn" type="PackedScene" id=4]
+[ext_resource path="res://House.tscn" type="PackedScene" id=5]
+[ext_resource path="res://DungeonEntrance.tscn" type="PackedScene" id=6]
+[ext_resource path="res://default_env.tres" type="Environment" id=7]
+[ext_resource path="res://Textures/DistantSandCloud.tscn" type="PackedScene" id=8]
+[ext_resource path="res://WallModel.tscn" type="PackedScene" id=9]
+[ext_resource path="res://WallModelWindow.tscn" type="PackedScene" id=10]
+[ext_resource path="res://TempleAssets/Walls/Wall_Ruined_Full_2.obj" type="ArrayMesh" id=11]
+[ext_resource path="res://TempleAssets/Walls/Wall_Ruined_Full_1.obj" type="ArrayMesh" id=12]
+[ext_resource path="res://TempleAssets/Walls/Wall_Ruined_Half_1.obj" type="ArrayMesh" id=13]
+[ext_resource path="res://TempleAssets/Walls/Wall_Ruined_Half_2.obj" type="ArrayMesh" id=14]
+[ext_resource path="res://MummySpawn.tscn" type="PackedScene" id=15]
+[ext_resource path="res://TempleAssets/Conduit.tscn" type="PackedScene" id=16]
+[ext_resource path="res://TempleAssets/Puzzle/Wall/Puzzle_Wall_Conduit_Path_Cross.obj" type="ArrayMesh" id=17]
+[ext_resource path="res://TempleAssets/Puzzle/Wall/Puzzle_Wall_Conduit_Path_Corner.obj" type="ArrayMesh" id=18]
+[ext_resource path="res://TempleAssets/Water.tscn" type="PackedScene" id=19]
+[ext_resource path="res://TempleAssets/Water.tres" type="Material" id=20]
+[ext_resource path="res://Environment/Desert/cactus02.obj" type="ArrayMesh" id=21]
+[ext_resource path="res://Environment/Desert/Polydesert_atlas.tres" type="Material" id=22]
+[ext_resource path="res://Environment/Desert/rock01.obj" type="ArrayMesh" id=23]
+[ext_resource path="res://Environment/Desert/rock07.obj" type="ArrayMesh" id=24]
+[ext_resource path="res://Environment/Desert/aloe.obj" type="ArrayMesh" id=25]
+[ext_resource path="res://Environment/Desert/cactus01.obj" type="ArrayMesh" id=26]
+[ext_resource path="res://Environment/Desert/cactus03.obj" type="ArrayMesh" id=27]
+[ext_resource path="res://Textures/TexturesCom_CelticSet01_02_512_3dbrush.png" type="Texture" id=28]
+[ext_resource path="res://Textures/NormalMap.png" type="Texture" id=29]
+[ext_resource path="res://TestCircuit.tscn" type="PackedScene" id=30]
+[ext_resource path="res://TestDoorThres.tscn" type="PackedScene" id=31]
+[ext_resource path="res://SceneTeleport.tscn" type="PackedScene" id=32]
+[ext_resource path="res://TestDungeon.tscn" type="PackedScene" id=33]
+[ext_resource path="res://TempleOneEntrance.tscn" type="PackedScene" id=34]
+[ext_resource path="res://Ruins.tscn" type="PackedScene" id=35]
 [ext_resource path="res://addons/zylann.hterrain/hterrain.gd" type="Script" id=36]
 [ext_resource path="res://addons/zylann.hterrain/tools/icons/icon_heightmap_node.svg" type="Texture" id=37]
 [ext_resource path="res://WorldTerrain/data.hterrain" type="Resource" id=38]
@@ -43,7 +43,7 @@
 [ext_resource path="res://Textures/TexturesCom_DesertSand3_2x2_1K_roughness.png" type="Texture" id=41]
 [ext_resource path="res://Textures/TexturesCom_Cliffs0072_1_seamless_S.jpg" type="Texture" id=42]
 [ext_resource path="res://Textures/TexturesCom_Cliffs0072_1_seamless_S_n.png" type="Texture" id=43]
-[ext_resource path="res://TempleOneEntrance.tscn" type="PackedScene" id=44]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=44]
 
 [sub_resource type="PlaneMesh" id=1]
 size = Vector2( 100, 100 )
@@ -218,7 +218,7 @@ subdivide_width = 200
 subdivide_depth = 200
 
 [sub_resource type="PlaneMesh" id=20]
-material = ExtResource( 22 )
+material = ExtResource( 20 )
 size = Vector2( 10, 13.36 )
 subdivide_width = 10
 subdivide_depth = 10
@@ -294,8 +294,8 @@ shader_param/DisplaceDist = 5.0
 shader_param/DisplaceAmount = 0.02
 shader_param/RuneScale = Vector2( 3, 2 )
 shader_param/dissolveScale = Vector2( 10.4, 9.54 )
-shader_param/Rune = ExtResource( 30 )
-shader_param/RuneNormal = ExtResource( 31 )
+shader_param/Rune = ExtResource( 28 )
+shader_param/RuneNormal = ExtResource( 29 )
 
 [sub_resource type="Shader" id=29]
 code = "shader_type spatial;
@@ -519,14 +519,24 @@ noise = SubResource( 32 )
 seamless = true
 noise = SubResource( 34 )
 
+[sub_resource type="SpatialMaterial" id=36]
+flags_transparent = true
+albedo_color = Color( 1, 1, 1, 0.27451 )
+
+[sub_resource type="PlaneMesh" id=37]
+material = SubResource( 36 )
+size = Vector2( 100, 100 )
+
+[sub_resource type="ConvexPolygonShape" id=38]
+points = PoolVector3Array( 50, 0, 50, -50, 0, 50, 50, 0, -50, -50, 0, -50 )
+
 [node name="Spatial" type="Spatial"]
 
 [node name="AreaOne" type="Spatial" parent="."]
-editor/display_folded = true
 
 [node name="Ground" type="MeshInstance" parent="AreaOne"]
 editor/display_folded = true
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 31.114, 0 )
 visible = false
 mesh = SubResource( 1 )
 material/0 = SubResource( 5 )
@@ -536,26 +546,17 @@ material/0 = SubResource( 5 )
 [node name="CollisionShape" type="CollisionShape" parent="AreaOne/Ground/StaticBody"]
 shape = SubResource( 6 )
 
-[node name="player" parent="AreaOne" instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.61319, 4.01737, 8.36552 )
-CROUCH_HALF_HEIGHT = 0.5
-GRAVITY = 1
-JUMP_SPEED = 13
-
-[node name="Button" parent="AreaOne" instance=ExtResource( 4 )]
+[node name="Button" parent="AreaOne" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.900695, 2.46444 )
 ButtonName = "red"
 
-[node name="Button2" parent="AreaOne" instance=ExtResource( 4 )]
+[node name="Button2" parent="AreaOne" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.900695, 2.16272 )
 ButtonName = "green"
 
-[node name="Button3" parent="AreaOne" instance=ExtResource( 4 )]
+[node name="Button3" parent="AreaOne" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.900695, 1.81833 )
 ButtonName = "blue"
-
-[node name="KinematicBody" parent="AreaOne" instance=ExtResource( 5 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 7.14819 )
 
 [node name="DirectionalLight" type="DirectionalLight" parent="AreaOne"]
 transform = Transform( 1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 1, 0 )
@@ -564,75 +565,75 @@ light_indirect_energy = 16.0
 shadow_enabled = true
 shadow_color = Color( 0.627451, 0.611765, 0.894118, 1 )
 
-[node name="Tower" parent="AreaOne" instance=ExtResource( 6 )]
+[node name="Tower" parent="AreaOne" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.70942, 9.76972, -30.1069 )
 
-[node name="Temple" parent="AreaOne" instance=ExtResource( 7 )]
+[node name="Temple" parent="AreaOne" instance=ExtResource( 5 )]
 transform = Transform( -0.904624, 0, 0.426211, 0, 1, 0, -0.426211, 0, -0.904624, -18.1496, 5.17954, 69.2255 )
 
-[node name="Entrance" parent="AreaOne" instance=ExtResource( 8 )]
+[node name="Entrance" parent="AreaOne" instance=ExtResource( 6 )]
 transform = Transform( -0.998719, 0.0505142, 0.00297215, 0.0500375, 0.994626, -0.0906325, -0.00753441, -0.0903677, -0.995879, 14.2926, 3.69769, 26.3188 )
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="AreaOne"]
-environment = ExtResource( 9 )
+environment = ExtResource( 7 )
 
-[node name="DistantSandCloud" parent="AreaOne" instance=ExtResource( 10 )]
+[node name="DistantSandCloud" parent="AreaOne" instance=ExtResource( 8 )]
 transform = Transform( -7.40093, 0, -6.72504, 0, 10, 0, 6.72504, 0, -7.40093, 108.348, 0, 86.8629 )
 
 [node name="Ruins" type="Spatial" parent="AreaOne"]
 editor/display_folded = true
 
-[node name="WallMode" parent="AreaOne/Ruins" instance=ExtResource( 11 )]
+[node name="WallMode" parent="AreaOne/Ruins" instance=ExtResource( 9 )]
 transform = Transform( 1, 0, 0, 0, 0.932978, -0.359934, 0, 0.359934, 0.932978, -2, -0.188842, -5 )
 
-[node name="WallMode5" parent="AreaOne/Ruins" instance=ExtResource( 11 )]
+[node name="WallMode5" parent="AreaOne/Ruins" instance=ExtResource( 9 )]
 transform = Transform( 0.987299, 0.158873, 0, -0.158873, 0.987299, 0, 0, 0, 1, 6, -0.153304, -5 )
 
-[node name="WallMode3" parent="AreaOne/Ruins" instance=ExtResource( 11 )]
+[node name="WallMode3" parent="AreaOne/Ruins" instance=ExtResource( 9 )]
 transform = Transform( 1, 0, 0, 0, 0.965549, 0.260221, 0, -0.260221, 0.965549, 2, -0.240993, -5 )
 
-[node name="WallMode2" parent="AreaOne/Ruins" instance=ExtResource( 12 )]
+[node name="WallMode2" parent="AreaOne/Ruins" instance=ExtResource( 10 )]
 transform = Transform( 0.991203, -0.132349, 0, 0.132349, 0.991203, 0, 0, 0, 1, 0, -0.127689, -5 )
 
-[node name="WallMode4" parent="AreaOne/Ruins" instance=ExtResource( 12 )]
+[node name="WallMode4" parent="AreaOne/Ruins" instance=ExtResource( 10 )]
 transform = Transform( 0.991392, -0.130923, 0, 0.130923, 0.991392, 0, 0, 0, 1, 4.29833, 0, -5 )
 
-[node name="WallMode6" parent="AreaOne/Ruins" instance=ExtResource( 11 )]
+[node name="WallMode6" parent="AreaOne/Ruins" instance=ExtResource( 9 )]
 editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, -0.141508, -0.989937, 0, 0.989937, -0.141508, 11.8611, 1.46689, -4.56854 )
 
-[node name="WallMode7" parent="AreaOne/Ruins/WallMode6" instance=ExtResource( 11 )]
+[node name="WallMode7" parent="AreaOne/Ruins/WallMode6" instance=ExtResource( 9 )]
 transform = Transform( 0.957514, 0.288387, 0, -0.288387, 0.957514, 2.98023e-008, -7.45058e-009, -4.47035e-008, 1, 0.200995, 4.17602, 5.96046e-008 )
 
-[node name="WallMode8" parent="AreaOne/Ruins/WallMode6/WallMode7" instance=ExtResource( 11 )]
+[node name="WallMode8" parent="AreaOne/Ruins/WallMode6/WallMode7" instance=ExtResource( 9 )]
 transform = Transform( 1, 5.96046e-008, 1.11759e-008, 5.96046e-008, 1, -4.47035e-008, 0, 0, 1, 2.86102e-006, 3.73971, 1.78814e-007 )
 
-[node name="WallMode7" parent="AreaOne/Ruins" instance=ExtResource( 11 )]
+[node name="WallMode7" parent="AreaOne/Ruins" instance=ExtResource( 9 )]
 editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, -0.665714, -0.746207, 0, 0.746207, -0.665714, 13.648, 2.6, -15.948 )
 
-[node name="WallMode7" parent="AreaOne/Ruins/WallMode7" instance=ExtResource( 11 )]
+[node name="WallMode7" parent="AreaOne/Ruins/WallMode7" instance=ExtResource( 9 )]
 transform = Transform( 0.888335, 0.459182, -0.00365623, -0.346454, 0.675434, 0.650968, 0.301382, -0.577011, 0.759096, 0.200995, 4.17602, 0 )
 
-[node name="WallMode8" parent="AreaOne/Ruins/WallMode7/WallMode7" instance=ExtResource( 11 )]
+[node name="WallMode8" parent="AreaOne/Ruins/WallMode7/WallMode7" instance=ExtResource( 9 )]
 transform = Transform( 0.982607, 0.185664, -0.00364236, -0.185668, 0.982613, -0.000735238, 0.00344252, 0.00139866, 0.999993, 3.8147e-006, 3.73971, 1.93715e-007 )
 
-[node name="WallMode8" parent="AreaOne/Ruins" instance=ExtResource( 11 )]
+[node name="WallMode8" parent="AreaOne/Ruins" instance=ExtResource( 9 )]
 transform = Transform( 2.24812, 0.577572, 1.90063, -0.0324191, 2.88068, -0.837047, -1.98618, 0.606721, 2.16494, -40.0162, -1.53065, 21.9487 )
 
-[node name="WallMode9" parent="AreaOne/Ruins" instance=ExtResource( 11 )]
+[node name="WallMode9" parent="AreaOne/Ruins" instance=ExtResource( 9 )]
 transform = Transform( 1.01397, 0.79835, 2.70823, -0.0324191, 2.88068, -0.837047, -2.82326, 0.253647, 0.982265, -35.6784, -1.53065, 16.5656 )
 
-[node name="WallMode10" parent="AreaOne/Ruins" instance=ExtResource( 11 )]
+[node name="WallMode10" parent="AreaOne/Ruins" instance=ExtResource( 9 )]
 transform = Transform( 1.6526, 0.715767, 2.39929, -0.0324191, 2.88068, -0.837047, -2.50357, 0.435174, 1.5946, -32.7385, -1.53065, 9.74981 )
 
-[node name="WallMode11" parent="AreaOne/Ruins" instance=ExtResource( 11 )]
+[node name="WallMode11" parent="AreaOne/Ruins" instance=ExtResource( 9 )]
 transform = Transform( 2.44285, 0.511203, 1.66468, -0.0324191, 2.88068, -0.837047, -1.7411, 0.663605, 2.35121, -27.0591, -0.683731, 3.35453 )
 
 [node name="Wall_Ruined_Full_2" type="MeshInstance" parent="AreaOne/Ruins"]
 editor/display_folded = true
 transform = Transform( 0.991114, -0.132928, 0.00484509, 0.131891, 0.977352, -0.165496, 0.0172636, 0.164664, 0.986199, -3.62745, 2.01404, -8.62208 )
-mesh = ExtResource( 13 )
+mesh = ExtResource( 11 )
 material/0 = null
 material/1 = null
 material/2 = null
@@ -650,7 +651,7 @@ shape = SubResource( 7 )
 [node name="Wall_Ruined_Full_3" type="MeshInstance" parent="AreaOne/Ruins"]
 editor/display_folded = true
 transform = Transform( 0.991114, -0.133016, 0, 0.133016, 0.991114, 0, 0, 0, 1, -5.51785, 1.54539, -8.82092 )
-mesh = ExtResource( 14 )
+mesh = ExtResource( 12 )
 material/0 = null
 material/1 = null
 material/2 = null
@@ -673,7 +674,7 @@ shape = SubResource( 8 )
 [node name="Wall_Ruined_Half_1" type="MeshInstance" parent="AreaOne/Ruins"]
 editor/display_folded = true
 transform = Transform( 2.98023e-008, 0, -1, -0.319854, 0.947467, -9.5324e-009, 0.947467, 0.319854, 2.82367e-008, 6, 3.7598, -10 )
-mesh = ExtResource( 15 )
+mesh = ExtResource( 13 )
 material/0 = null
 material/1 = null
 material/2 = null
@@ -688,7 +689,7 @@ shape = SubResource( 9 )
 [node name="Wall_Ruined_Half_2" type="MeshInstance" parent="AreaOne/Ruins"]
 editor/display_folded = true
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, -10 )
-mesh = ExtResource( 16 )
+mesh = ExtResource( 14 )
 material/0 = null
 material/1 = null
 material/2 = null
@@ -699,49 +700,49 @@ material/3 = null
 [node name="CollisionShape" type="CollisionShape" parent="AreaOne/Ruins/Wall_Ruined_Half_2/StaticBody"]
 shape = SubResource( 10 )
 
-[node name="MummySpawn" parent="AreaOne" instance=ExtResource( 17 )]
+[node name="MummySpawn" parent="AreaOne" instance=ExtResource( 15 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.8094, 0, 8.75205 )
 MummiesToSpawn = 0
 
-[node name="Conduit" parent="AreaOne" instance=ExtResource( 18 )]
+[node name="Conduit" parent="AreaOne" instance=ExtResource( 16 )]
 editor/display_folded = true
 transform = Transform( 0.800586, 0.599218, 0, -0.599218, 0.800586, 0, 0, 0, 1, 0, 1.1924, 0 )
 OtherConduits = [ NodePath("Conduit2") ]
 Button = NodePath("../AreaOne/Toggle")
 RotationSpeed = 0.1
 
-[node name="Conduit2" parent="AreaOne/Conduit" instance=ExtResource( 18 )]
+[node name="Conduit2" parent="AreaOne/Conduit" instance=ExtResource( 16 )]
 transform = Transform( 0.952685, -0.30396, 0, 0.30396, 0.952685, 0, 0, 0, 1, -1.10916, 0, 0 )
 OtherConduits = [ NodePath(".."), NodePath("Conduit3") ]
 RotationSpeed = 0.1
-MeshType = ExtResource( 19 )
+MeshType = ExtResource( 17 )
 
-[node name="Conduit3" parent="AreaOne/Conduit/Conduit2" instance=ExtResource( 18 )]
+[node name="Conduit3" parent="AreaOne/Conduit/Conduit2" instance=ExtResource( 16 )]
 transform = Transform( 0.999099, -0.0424413, 0, 0.0424413, 0.999099, 0, 0, 0, 1, -1.45148, 1.19209e-007, 0 )
 OtherConduits = [ NodePath("..") ]
 ShouldRotate = true
 RotationSpeed = 1.571
 RotateButton = NodePath("../../../AreaOne/Conduit/Conduit2/Conduit3/Button")
-MeshType = ExtResource( 20 )
+MeshType = ExtResource( 18 )
 
-[node name="Button" parent="AreaOne/Conduit/Conduit2/Conduit3" instance=ExtResource( 4 )]
+[node name="Button" parent="AreaOne/Conduit/Conduit2/Conduit3" instance=ExtResource( 3 )]
 
-[node name="Toggle" parent="AreaOne" instance=ExtResource( 4 )]
+[node name="Toggle" parent="AreaOne" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.889311, 1.31199, 0 )
 ButtonName = "Jose"
 TwoState = true
 
-[node name="MeshInstance" parent="AreaOne" instance=ExtResource( 21 )]
+[node name="MeshInstance" parent="AreaOne" instance=ExtResource( 19 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.758, -6, -2.811 )
 mesh = SubResource( 19 )
 material/0 = null
 
-[node name="MeshInstance4" parent="AreaOne" instance=ExtResource( 21 )]
+[node name="MeshInstance4" parent="AreaOne" instance=ExtResource( 19 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 182.312, -6, -4.722 )
 mesh = SubResource( 19 )
 material/0 = null
 
-[node name="MeshInstance2" parent="AreaOne" instance=ExtResource( 21 )]
+[node name="MeshInstance2" parent="AreaOne" instance=ExtResource( 19 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 12.65, -6, -111.46 )
 mesh = SubResource( 19 )
 material/0 = null
@@ -751,7 +752,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -23.1366, -1.20811, 16.8757 )
 mesh = SubResource( 20 )
 material/0 = null
 
-[node name="MeshInstance3" parent="AreaOne" instance=ExtResource( 21 )]
+[node name="MeshInstance3" parent="AreaOne" instance=ExtResource( 19 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 182.312, -6, -111.46 )
 mesh = SubResource( 19 )
 material/0 = null
@@ -762,8 +763,8 @@ editor/display_folded = true
 [node name="cactus02" type="MeshInstance" parent="AreaOne/Detail"]
 editor/display_folded = true
 transform = Transform( 0.953179, 0.300572, -0.0332455, -0.302405, 0.947402, -0.10479, 7.45058e-009, 0.109937, 0.993939, -26.4895, -0.413531, 22.9969 )
-mesh = ExtResource( 23 )
-material/0 = ExtResource( 24 )
+mesh = ExtResource( 21 )
+material/0 = ExtResource( 22 )
 
 [node name="StaticBody" type="StaticBody" parent="AreaOne/Detail/cactus02"]
 
@@ -773,8 +774,8 @@ shape = SubResource( 21 )
 [node name="rock01" type="MeshInstance" parent="AreaOne/Detail"]
 editor/display_folded = true
 transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 4.856, -0.628386, 26.8597 )
-mesh = ExtResource( 25 )
-material/0 = ExtResource( 24 )
+mesh = ExtResource( 23 )
+material/0 = ExtResource( 22 )
 
 [node name="StaticBody" type="StaticBody" parent="AreaOne/Detail/rock01"]
 
@@ -784,8 +785,8 @@ shape = SubResource( 22 )
 [node name="rock07" type="MeshInstance" parent="AreaOne/Detail"]
 editor/display_folded = true
 transform = Transform( 0.662106, 0, -0.74941, 0, 1, 0, 0.74941, 0, 0.662106, -0.270111, -0.257918, 27.6857 )
-mesh = ExtResource( 26 )
-material/0 = ExtResource( 24 )
+mesh = ExtResource( 24 )
+material/0 = ExtResource( 22 )
 
 [node name="StaticBody" type="StaticBody" parent="AreaOne/Detail/rock07"]
 
@@ -794,19 +795,19 @@ shape = SubResource( 23 )
 
 [node name="aloe" type="MeshInstance" parent="AreaOne/Detail"]
 transform = Transform( 0.9895, -0.14453, 0, 0.14453, 0.9895, 0, 0, 0, 1, 8.99613, 3.85985, 29.1787 )
-mesh = ExtResource( 27 )
-material/0 = ExtResource( 24 )
+mesh = ExtResource( 25 )
+material/0 = ExtResource( 22 )
 
 [node name="aloe2" type="MeshInstance" parent="AreaOne/Detail"]
 transform = Transform( 0.177001, -0.0258535, 0.466907, 0.072265, 0.49475, 0, -0.462005, 0.0674821, 0.17888, 9.79413, 3.46427, 22.3368 )
-mesh = ExtResource( 27 )
-material/0 = ExtResource( 24 )
+mesh = ExtResource( 25 )
+material/0 = ExtResource( 22 )
 
 [node name="cactus01" type="MeshInstance" parent="AreaOne/Detail"]
 editor/display_folded = true
 transform = Transform( 1.56006, 0, 1.25149, 0, 2, 0, -1.25149, 0, 1.56006, -10.6873, -0.0456619, 10.9235 )
-mesh = ExtResource( 28 )
-material/0 = ExtResource( 24 )
+mesh = ExtResource( 26 )
+material/0 = ExtResource( 22 )
 
 [node name="StaticBody" type="StaticBody" parent="AreaOne/Detail/cactus01"]
 
@@ -816,9 +817,9 @@ shape = SubResource( 24 )
 [node name="cactus03" type="MeshInstance" parent="AreaOne/Detail"]
 editor/display_folded = true
 transform = Transform( 0.780029, 0, 0.625743, 0, 1, 0, -0.625743, 0, 0.780029, -20.4486, -0.21334, 7.59005 )
-mesh = ExtResource( 29 )
-material/0 = ExtResource( 24 )
-material/1 = ExtResource( 24 )
+mesh = ExtResource( 27 )
+material/0 = ExtResource( 22 )
+material/1 = ExtResource( 22 )
 
 [node name="StaticBody" type="StaticBody" parent="AreaOne/Detail/cactus03"]
 
@@ -826,6 +827,7 @@ material/1 = ExtResource( 24 )
 shape = SubResource( 25 )
 
 [node name="Oasis" type="Spatial" parent="AreaOne"]
+editor/display_folded = true
 
 [node name="MeshInstance2" type="MeshInstance" parent="AreaOne/Oasis"]
 transform = Transform( 1, 0, 0, 0, 0.974976, 0.222309, 0, -0.222309, 0.974976, -23.2981, -1.73539, 17.798 )
@@ -840,22 +842,28 @@ extents = Vector3( 4.66515, 2.69456, 3.94082 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 32.6171, -6.53947, -54.3576 )
 extents = Vector3( 6.97748, 3.27315, 5.78748 )
 
-[node name="Spatial" parent="AreaOne" instance=ExtResource( 32 )]
+[node name="Spatial" parent="AreaOne" instance=ExtResource( 30 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -22.9649, 0.429269, 29.7552 )
 
-[node name="Spatial2" parent="AreaOne" instance=ExtResource( 33 )]
+[node name="Spatial2" parent="AreaOne" instance=ExtResource( 31 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16.5642, 4.76837e-007, 28.5574 )
 
-[node name="SceneTeleport" parent="AreaOne" instance=ExtResource( 34 )]
+[node name="SceneTeleport" parent="AreaOne" instance=ExtResource( 32 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0.589588, 13 )
 WhereTo = Vector3( 0, 12, 0 )
 LookAt = Vector3( 0, 0, 1 )
 SameScene = true
-SceneToLoad = ExtResource( 35 )
+SceneToLoad = ExtResource( 33 )
 SceneName = "Default"
 WhereToLoad = Vector3( 0, 10, 0 )
 NodeToFree = NodePath("")
 FadeTimes = 2.0
+
+[node name="Entrance2" parent="AreaOne" instance=ExtResource( 34 )]
+transform = Transform( 0.881959, 0, -0.471325, 0, 1, 0, 0.471325, 0, 0.881959, 4.90656, 0.150879, -22.6385 )
+
+[node name="Ruins2" parent="AreaOne" instance=ExtResource( 35 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 42.0415, -0.25286, 14.6246 )
 
 [node name="HTerrain" type="Spatial" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -60, 0, -60 )
@@ -902,5 +910,42 @@ ground/normal_roughness_2 = null
 ground/albedo_bump_3 = null
 ground/normal_roughness_3 = null
 
-[node name="Spatial" parent="." instance=ExtResource( 44 )]
-transform = Transform( 0.93939, 0, -0.342851, 0, 1, 0, 0.342851, 0, 0.93939, 3.7945, 0.571048, -23.1535 )
+[node name="Demoocluder" type="Spatial" parent="."]
+editor/display_folded = true
+
+[node name="MeshInstance" type="MeshInstance" parent="Demoocluder"]
+transform = Transform( 1, 0, 0, 0, 1.19249e-008, 1, 0, -1, 1.19249e-008, 0, 2.23545, 41.4681 )
+mesh = SubResource( 37 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Demoocluder/MeshInstance"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Demoocluder/MeshInstance/StaticBody"]
+shape = SubResource( 38 )
+
+[node name="MeshInstance2" type="MeshInstance" parent="Demoocluder"]
+transform = Transform( 0.483354, -0.875425, -3.8266e-008, 0, -4.37114e-008, 1, -0.875425, -0.483354, -2.11281e-008, 67.7478, 2.23545, -3.07392 )
+mesh = SubResource( 37 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Demoocluder/MeshInstance2"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Demoocluder/MeshInstance2/StaticBody"]
+shape = SubResource( 38 )
+
+[node name="MeshInstance3" type="MeshInstance" parent="Demoocluder"]
+transform = Transform( -0.974981, -0.222288, -9.71651e-009, 0, -4.37114e-008, 1, -0.222288, 0.974981, 4.26178e-008, 48.0369, 2.23545, -56.478 )
+mesh = SubResource( 37 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="Demoocluder/MeshInstance3"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Demoocluder/MeshInstance3/StaticBody"]
+shape = SubResource( 38 )
+
+[node name="player" parent="." instance=ExtResource( 44 )]
+transform = Transform( 0.238709, 0, 0.971091, 0, 1, 0, -0.971091, 0, 0.238709, 39.5682, 2.4319, -14.4523 )
+MOUSE_SENS = 0.001
+CROUCH_HALF_HEIGHT = 0.5
+GRAVITY = 1
+JUMP_SPEED = 13

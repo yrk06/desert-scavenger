@@ -1,0 +1,60 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://TempleAssets/Floor/Floor_Normal_Square.obj" type="ArrayMesh" id=1]
+
+[sub_resource type="ConvexPolygonShape" id=1]
+points = PoolVector3Array( 0.5, -0.2, -0.5, 0.5, -0.2, 0.5, 0.5, 0, -0.5, 0.5, 0, 0.5, 0.5, -0.2, -0.5, -0.5, -0.2, -0.5, 0.5, -0.2, 0.5, -0.5, -0.2, 0.5, -0.5, 0, -0.5, -0.5, 0, 0.5, -0.5, -0.2, 0.5, -0.5, -0.2, -0.5, -0.5, 0, 0.5, 0.5, 0, 0.5, 0.5, -0.2, 0.5, -0.5, -0.2, 0.5, 0.5, 0, 0.5, -0.5, 0, 0.5, 0.5, 0, -0.5, -0.5, 0, -0.5, -0.5, -0.2, -0.5, 0.5, -0.2, -0.5, -0.5, 0, -0.5, 0.5, 0, -0.5 )
+
+[node name="Floor2x2_" type="Spatial"]
+
+[node name="Floor_1" type="MeshInstance" parent="."]
+editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="StaticBody" type="StaticBody" parent="Floor_1"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Floor_1/StaticBody"]
+shape = SubResource( 1 )
+
+[node name="Floor_2" type="MeshInstance" parent="."]
+editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 0.5 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="StaticBody" type="StaticBody" parent="Floor_2"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Floor_2/StaticBody"]
+shape = SubResource( 1 )
+
+[node name="Floor_3" type="MeshInstance" parent="."]
+editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, -0.5 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="StaticBody" type="StaticBody" parent="Floor_3"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Floor_3/StaticBody"]
+shape = SubResource( 1 )
+
+[node name="Floor_4" type="MeshInstance" parent="."]
+editor/display_folded = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, -0.5 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="StaticBody" type="StaticBody" parent="Floor_4"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Floor_4/StaticBody"]
+shape = SubResource( 1 )
